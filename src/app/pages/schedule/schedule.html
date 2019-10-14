@@ -40,12 +40,15 @@
       </ion-item-divider>
 
       <ion-item-sliding
-        *ngFor="let session of group.sessions"
+        *ngFor="let session of group.sessions; let i = index"
         #slidingItem
         [attr.track]="session.tracks[0] | lowercase"
         [hidden]="session.hide"
       >
-        <ion-item routerLink="/app/schedule/session/{{session.id}}">
+        <ion-item
+          routerLink="/app/schedule/session/{{session.id}}"
+          [attr.lines]="group.sessions.length == (i + 1) ? 'full' : null"
+        >
           <ion-label>
             <h3>{{session.name}}</h3>
             <p>
