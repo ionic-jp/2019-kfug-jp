@@ -1,0 +1,16 @@
+name: okunokentaro
+company: クレスウェア代表
+hall: "A-2"
+time: "11:45"
+detail: |
+  TypeScriptフロントエンド・バックエンドエンジニア。Angular日本ユーザー会、ng-kyotoオーガナイザ。大規模ウェブアプリケーション開発をいくつも手掛け、DDDをベースとした設計、開発チーム運営を得意とする。
+image: okunokentaro.jpg
+twitter: https://twitter.com/okunokentaro
+facebook:
+tag: angular
+tagkey: ngkyoto
+link: https://okunokentaro.com
+session:
+  title: ディレクトリ構成ベストプラクティス 〜 Angularアプリを作り続けてわかったこと
+  detail: |
+    開発の規模が大きくなるほどファイルも増えていきます。膨大なファイルが一カ所に集まっていると、検索できたとしてもエディタ上での視認性はとても悪いものになってしまいます。冗長さなく、かつ論理的にディレクトリを分けていくにはどうすればよいでしょうか。アプリケーションの設計段階から考えるべき、特定のフレームワークに限らない抽象的な整理の哲学に関して、その経験談をご紹介します。

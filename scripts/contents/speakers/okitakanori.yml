@@ -1,0 +1,16 @@
+name: 大木尊紀
+company: 株式会社FOLIO
+hall: "B-6"
+time: "15:15"
+detail: |
+  フロントエンドエンジニア。最近はエンジニアリングとデザインの境界に興味がある。
+image: okitakanori.jpg
+twitter: https://twitter.com/takanoripe
+facebook:
+link: https://takanorip.com/
+session:
+  title: プロダクト開発とFigmaのより良い関係を求めて
+  detail: |
+    近年プロダクト開発を取り巻く環境は複雑化してきており、開発フローを整備することはプロダクト開発の速度を上げるうえで非常に重要です。
+    Figmaは最近注目を集めるデザインツールで、オンラインの共同編集機能やなど今までのデザインツールにはない機能・特徴を持っています。
+    この発表では、Figmaの機能（Plugin、Web API、Live Embed）とその他周辺ツールを活用し開発速度を向上させる方法と、実際にプロジェクトで運用してみて気づいたことについてお話したいと思います。

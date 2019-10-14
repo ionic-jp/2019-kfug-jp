@@ -1,0 +1,24 @@
+name: 花谷拓磨(@potato4d)
+company: ElevenBack LLC. / LINE株式会社
+hall: "A-6"
+time: "15:15"
+detail: |
+  ユーザーエクスペリエンスとクラウドネイティブを愛するフロントエンドエンジニア。ある時は開発者、またある時は会社代表をしています。Vue.js / React.js 日本語公式ドキュメント管理者、Nuxt.js ビギナーズガイド著者。
+image: potato4d.jpg
+twitter: https://twitter.com/potato4d
+facebook: https://facebook.com/potato4d
+link: https://elevenback.co.jp
+session:
+  title: 私たちはなぜ SPA で開発するのか
+  detail: |
+    Vue.jsやReact.js、最近ではNuxt.jsを利用したSPA開発は現在では当たり前のものとなっています。
+    初回ロードが完了すればその後の動作が軽快であるなどの理由で採用され、最近ではPWAによるネイティブに近い体験の実現などが目的となることもしばしばあります。
+
+    しかし、本音を言えばSPAの機能面での優位性ではなく、Developer Experienceを目的に採用している場合も多いのではないでしょうか。
+    フロントエンド開発者には、モダンJavaScriptフレームワークも、モジュールバンドラも、HMRも今やなくてはならない存在ですし、当面SPAが優位な状況は続くでしょう。
+
+    一方で、自身が取り巻く技術のバックグラウンドと妥当性を常に意識するのは重要なことです。
+    アクセス頻度は多いが滞在時間は短いメディアのようなサイトで起動コストが重いSPAは妥当なのでしょうか。Universal
+    Applicationにに、複雑な状態管理は求められているのでしょうか。
+
+    なぜ私達がSPAで開発するのかを、今あらためて、一緒に考えてみませんか？

@@ -1,0 +1,40 @@
+communities:
+#  - name: 関西フロントエンドUG
+#    detail: |
+#      関西フロントエンドUGのコミュニティーだよ!!
+#    key: kfug
+#    image: kfug.png
+#    label: Web制作
+#    link: https://kfug.connpass.com/
+  - name: ng-kyoto
+    key: ngkyoto
+    detail: |
+      ng-kyotoはAngularをテーマに京都で活動を行っているユーザーコミュニティです。
+      日本の古都、京都から最先端のWeb技術を学び、発信していきます。
+      古都の空気に触れながら、Angularの未来を一緒に学びませんか？
+      Angularって聞くと「なんぎやな、ややこしな」と思わはるかもしれませんけど、周りと一緒に勉強したら意外ととっつきやすいんですよ。
+    image: ng-kyoto.png
+    link: https://ng-kyoto.connpass.com/
+  - name: v-kansai
+    detail: |
+      関西を拠点に(毎月京都と大阪で交互に)、Vue.js に興味のある方でしたらどなたでもお気軽にご参加ください。
+      主に Vue.js日本ユーザーグループの Slack vuejs-jp Slack の #v-kansai チャンネルでやり取りをしています。
+      Twitterハッシュタグは #v_kansai を使っています。
+    key: vkansai
+    image: v-kansai.png
+    link: https://vuekansai.connpass.com/
+  - name: Adobe XD ユーザーグループ大阪
+    key: adobexd
+    detail: |
+      Adobe XDは「考える速度でデザインする」をテーマにアドビが開発・販売しているUI/UXデザインツールです。
+      XDのアドビ公認ユーザーグループ「Adobe XD ユーザーグループ大阪」では、XDを使っている人、周りに広めたい人、興味を持っている人が、気軽に参加できる勉強会や交流会を、定期的に開催しています。
+      XDを中心としたノウハウ交換だけでなく、使って楽しい・気になることを共有したり、困っていることを解決したりする場になることを目指しています。
+    image: XDUGosaka_logo.png
+    link: https://xdstudy-osaka.connpass.com/
+  - name: Ionic Japan User Group
+    detail: |
+      IonicはWeb技術を使ったモバイルアプリとデスクトップアプリ制作をサポートします。
+      Ionicを使うことで、iOS、Androidのそれぞれに準拠したUIコンポーネントやアニメーションを利用することができます。つくったWebアプリをApp Store/Google Play Storeで配信するための機能があるので、Web制作者がアプリ開発をはじめる第一歩におすすめです。
+    key: ionic
+    image: ionic-jpan.png
+    link: https://ionic-jp.connpass.com/

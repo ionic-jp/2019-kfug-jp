@@ -1,0 +1,21 @@
+name: カンボ@沖縄(鈴木孝之)
+company: 株式会社Re:Build
+hall: "C-4"
+time: "13:45"
+detail: |
+  1990年神奈川県生まれ。多摩大学経営情報学部卒。
+  文系の学部を卒業後、2013年に東京のITベンチャー企業にシステムエンジニアとして入社し、プログラミングを習得。
+  その後、株式会社フルスピードにwebエンジニアとして入社。フルスピードでは、大規模な広告配信サービスの管理画面開発を担当し、サーバサイド(php)からフロントエンド(JavaScript)まで幅広い開発に従事。また、社内では新卒研修も担当し、新人育成や指導に携わる。2017年11月に沖縄で起業し、株式会社Re:Buildを設立。東京の企業様からの開発案件を請けつつ、自社Webサービスを開発中。
+  開発で使用する技術はPHP(Symfony2・Laravel5・CakePHP3)、JavaScript(AngularJS、Angular2～4、Vue.js、TypeScript、Nuxt.js)など。
+image: suzukitakayuki.jpg
+twitter: https://twitter.com/kanbo0605
+facebook: https://www.facebook.com/takayuki.suzuki.39
+link:
+tag: Vue.js
+tagkey: vkansai
+session:
+  title: Nuxt.js + Firebaseでの開発と高速化に挑んだ話
+  detail: |
+    Nuxt.js + FirebaseでWebアプリにチャット機能の導入する際に工夫した点、感じたメリット・デメリットについてお話します。
+    例えば、リアルタイムで更新されるチャットを実現する際にロングポーリング、Websocket、Firebaseで検討した点。実際にFirebaseを導入して、FirebaseとNuxt.jsでの全体のアーキテクチャをどうしたか。導入してから出てきた問題でCloud Functionsによる処理の遅延の話などをします。
+    その他には、フロント周りでボトルネックになっていた処理を調査し、高速化した話をします。

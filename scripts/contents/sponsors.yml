@@ -1,0 +1,53 @@
+sponsors:
+  - name: 株式会社ラクス
+    rank: silver
+    key: SP0301
+    url: https://www.rakus.co.jp/
+  - name: 株式会社タンバリン
+    rank: gold
+    key: SP0201
+    url: https://www.tam-bourine.co.jp/
+    page: /sponsors/tambourine
+  - name: 株式会社ゆめみ
+    rank: platinum
+    key: SP0101
+    url: https://www.yumemi.co.jp/ja
+    page: /sponsors/yumemi
+  - name: 株式会社スマレジ
+    rank: gold
+    key: SP0202
+    url: https://corp.smaregi.jp/
+    page: /sponsors/smaregi
+  - name: 株式会社リビルド
+    rank: silver
+    key: SP0302
+    url: https://re-build.company/
+  - name: 株式会社CI
+    rank: platinum
+    key: SP0102
+    url: https://creative-innovation.co.jp/
+  - name: Lec Cafe
+    rank: silver
+    key: SP0303
+    url: https://leccafe.connpass.com/
+  - name: ベルフェイス株式会社
+    rank: silver
+    key: SP0304
+    url: https://corp.bell-face.com/
+  - name: 株式会社インパス
+    rank: gold
+    key: SP0203
+    url: https://impath.co.jp/
+    page: /sponsors/impath
+  - name: rabify CDN
+    rank: silver
+    key: SP0305
+    url: https://www.rabify.me/
+  - name: 株式会社chatbox.inc
+    rank: media
+    key: SP0401
+    url: https://chatbox-inc.com/
+  - name: Elevenback LLC
+    rank: silver
+    key: SP0306
+    url: https://elevenback.co.jp/

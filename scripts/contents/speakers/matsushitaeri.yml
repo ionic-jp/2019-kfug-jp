@@ -1,0 +1,20 @@
+name: 松下 絵梨
+company: ツキアカリ
+hall: "A-3"
+time: "13:00"
+tag: Adobe XD
+tagkey: adobexd
+detail: |
+  ウェブ/DTPデザイナー、京都造形芸術大学 非常勤講師、デジタルハリウッド大阪校 主幹講師、コンピュータ専門学校HAL 非常勤講師。
+  ウェブデザイン、ウェブディレクション、ロゴや印刷物のデザインのほか、コミュニティ活動・登壇にも力を入れている。「CSS Nite in Osaka」、「Adobe XD ユーザーグループ大阪」、「ツキアカリ Meet-up」主宰。
+  Adobe XDとお酒が好きです。
+image: matsushitaeri.jpg
+twitter: https://twitter.com/matsu_eri
+facebook: https://www.facebook.com/eri.matsushita.9
+link: https://xdug.jp/osaka/
+session:
+  title: Adobe XDで作るマイクロインタラクション
+  detail: |
+    Adobe XDは、ワイヤーフレーム・デザイン・プロトタイプを効率よく制作し共有することで、プロジェクトのコミュニケーションを円滑にするUI/UXツールです。
+    XDで作る「動くプロトタイプ」を用いることで、画面遷移やマイクロインタラクションをチーム内で共有し、コンセンサスを取ることができます。
+    XDの自動アニメーション機能を中心に、現場ですぐに使えるテクニックやノウハウ、モーションを実際にコーディングする時のコツについて、デモを交えながらお伝えします。

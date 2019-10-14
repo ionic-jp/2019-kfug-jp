@@ -11,7 +11,8 @@
     "test": "ng test --watch=false",
     "lint": "ng lint",
     "lint-staged": "lint-staged",
-    "formatter": "prettier --parser typescript --write \"./**/*.ts\" &&  prettier --parser html --write \"./**/*.html\""
+    "formatter": "prettier --parser typescript --write \"./**/*.ts\" &&  prettier --parser html --write \"./**/*.html\"",
+    "generate": "webpack scripts/index.js --output=\"./scripts/index.bundle.js\" --target=node && node scripts/index.bundle.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +31,11 @@
     "@ionic/angular": "^4.10.0",
     "@ionic/storage": "^2.1.3",
     "core-js": "^3.2.1",
+    "json-loader": "^0.5.7",
     "rxjs": "^6.5.3",
     "sw-toolbox": "3.6.0",
     "tslib": "^1.10.0",
+    "yaml-loader": "^0.5.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
@@ -51,6 +54,7 @@
     "@types/jasminewd2": "2.0.6",
     "@types/node": "^12.7.8",
     "codelyzer": "^5.1.2",
+    "contents": "^5.0.0",
     "jasmine-core": "^3.5.0",
     "jasmine-spec-reporter": "4.2.1",
     "karma": "4.3.0",
@@ -65,7 +69,9 @@
     "puppeteer": "^1.20.0",
     "ts-node": "8.4.1",
     "tslint": "^5.20.0",
-    "typescript": "~3.4.5"
+    "typescript": "~3.4.5",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
   },
   "cordova": {
     "platforms": [

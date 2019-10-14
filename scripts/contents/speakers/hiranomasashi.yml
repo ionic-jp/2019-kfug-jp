@@ -1,0 +1,16 @@
+name: 平野 昌士
+company: サイボウズ株式会社
+detail: |
+  WebやJavaScriptが好きでNode.jsのコミッターやコミュニティ活動をしています。
+hall: "A-7"
+time: "16:00"
+image: hiranomasashi.png
+twitter: https://twitter.com/shisama_
+facebook:
+link: https://shisama.dev/
+session:
+  title: フロントエンドエンジニアのためのセキュリティ対策
+  detail: |
+    安全なWebアプリケーションを開発するために、フロントエンドエンジニアがセキュリティについて考えなければいけないことはたくさんあります。
+    本セッションではXSSなどの脆弱性がどのように発生するのか、どう対策するのかについて紹介します。
+    入門的な話と最近の動向を交えながら話します。

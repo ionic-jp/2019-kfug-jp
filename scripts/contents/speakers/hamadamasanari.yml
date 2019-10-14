@@ -1,0 +1,17 @@
+name: 浜田 真成
+company: ヤフー株式会社 / 株式会社GYAO
+hall: "C-6"
+time: "15:15"
+detail: |
+  ヤフーでフロントエンド技術領域、デザイン領域を担当するエンジニア。映像事業領域のGYAOのWEBフロントエンドを統括し、プレーヤーやBFFなど幅広く開発を行う。WEB+DB PRESS の連載記事としてStorybook、HeadlessCMSの記事を執筆。
+image: hamadamasanari.png
+twitter: https://twitter.com/narirow
+facebook:
+link: https://speakerdeck.com/narirou
+session:
+  title: React Hooksで<video>を乗りこなす
+  detail: |
+    「映像プレーヤー」を作成したことはあるでしょうか？
+    作成したことはなくても、おそらく日々様々なプレーヤーを利用していると思います。
+    HTML5で定義されるHTML Video elementからは、メディア状態・エラー・DRM複合処理・広告再生・読み込み、などブラウザごとに多種多様なイベントが発生します。プレーヤーはこのイベントに加え、ユーザーから入力される複雑な操作も併せて処理する必要があります。UIや内部要件を実装するには、このイベント制御を適切にハンドルし、のりこなすことが必要不可欠なのです。
+    今回のセッションでは、複雑な処理をReactHooksを用いてHTML Video elementを制御する手法を、現在映像サービス「GYAO!」でプロダクションで使用されているプレーヤーを事例に、フロントエンドの観点からご紹介します。

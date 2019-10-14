@@ -1,0 +1,14 @@
+name: 田口 航
+company: 株式会社GameWith
+hall: "C-1"
+time: "11:00"
+detail: |
+  PWAやWeb Componentsが好きなエンジニア。
+image: taguchiwataru.png
+twitter: https://twitter.com/tiwu_official
+facebook:
+link: https://github.com/tiwuofficial
+session:
+  title: PWAとCache API
+  detail: |
+    PWAにおけるキャッシュを実現する機能はSWと勘違いされがちですが、実はCache APIがキャッシュ機能を提供しています。本セッションでは、PWAにおけるキャッシュ機能をSWとCache APIに分解し、Cache APIの紹介、利用方法を解説します。

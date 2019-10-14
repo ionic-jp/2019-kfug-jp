@@ -1,0 +1,18 @@
+name: 尾上 洋介
+company: 日本大学
+hall: "A-1"
+time: "11:00"
+detail: |
+  日本大学 文理学部情報科学科 准教授。Web技術が好きです。
+image: onoueyosuke.png
+twitter: https://twitter.com/_likr
+facebook:
+link: https://vdslab.jp/
+session:
+  title: モダンJavaScript再入門
+  detail: |
+    Webサイト・Webアプリ制作への高まる要求に耐えられるようにJavaScriptは進化を続けてきました。
+    特にこの約5年間で、JavaScriptはモダンなプログラミング言語へと大きな進化を遂げ、開発効率は劇的に高まりました。
+    一方で、古いままの情報も多く、最新技術をキャッチアップするのは大変な面もあります。
+    本セッションでは、新しくJavaScriptを学びたい人や昔に勉強した人、なんとなく書いている人が入門・再入門できるように、JavaScriptのモダンな書き方をなるべく実用的な例をまじえてご紹介します。
+    また、将来のWebの変化についていけるように、これから先のJavaScriptがどのように進化していくのかの展望についてもお話しします。
