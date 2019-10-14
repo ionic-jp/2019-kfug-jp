@@ -20,27 +20,26 @@ import { UserData } from './providers/user-data';
 export class AppComponent implements OnInit {
   appPages = [
     {
-      title: 'Schedule',
-      url: '/app/tabs/schedule',
+      title: 'スケジュール',
+      url: '/app/schedule',
       icon: 'calendar'
     },
     {
-      title: 'Speakers',
-      url: '/app/tabs/speakers',
+      title: 'スピーカー',
+      url: '/app/speakers',
       icon: 'contacts'
     },
     {
-      title: 'Map',
-      url: '/app/tabs/map',
+      title: '地図',
+      url: '/app/map',
       icon: 'map'
     },
     {
-      title: 'About',
-      url: '/app/tabs/about',
+      title: '概要',
+      url: '/app/about',
       icon: 'information-circle'
     }
   ];
-  loggedIn = false;
   dark = false;
 
   constructor(
@@ -59,15 +58,12 @@ export class AppComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.checkLoginStatus();
-    this.listenForLoginEvents();
-
     this.swUpdate.available.subscribe(async res => {
       const toast = await this.toastCtrl.create({
-        message: 'Update available!',
+        message: '最新版を利用できるようになりました',
         showCloseButton: true,
         position: 'bottom',
-        closeButtonText: `Reload`
+        closeButtonText: `アップデートする`
       });
 
       await toast.present();
@@ -84,43 +80,5 @@ export class AppComponent implements OnInit {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
-  }
-
-  checkLoginStatus() {
-    return this.userData.isLoggedIn().then(loggedIn => {
-      return this.updateLoggedInStatus(loggedIn);
-    });
-  }
-
-  updateLoggedInStatus(loggedIn: boolean) {
-    setTimeout(() => {
-      this.loggedIn = loggedIn;
-    }, 300);
-  }
-
-  listenForLoginEvents() {
-    this.events.subscribe('user:login', () => {
-      this.updateLoggedInStatus(true);
-    });
-
-    this.events.subscribe('user:signup', () => {
-      this.updateLoggedInStatus(true);
-    });
-
-    this.events.subscribe('user:logout', () => {
-      this.updateLoggedInStatus(false);
-    });
-  }
-
-  logout() {
-    this.userData.logout().then(() => {
-      return this.router.navigateByUrl('/app/tabs/schedule');
-    });
-  }
-
-  openTutorial() {
-    this.menu.enable(false);
-    this.storage.set('ion_did_tutorial', false);
-    this.router.navigateByUrl('/tutorial');
   }
 }
