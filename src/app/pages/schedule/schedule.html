@@ -8,7 +8,13 @@
     </ion-card-header>
   </ion-toolbar>
   <ion-toolbar>
-    <ion-searchbar  [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search" animated="true" showCancelButton></ion-searchbar>
+    <ion-searchbar
+      [(ngModel)]="queryText"
+      (ionChange)="updateSchedule()"
+      placeholder="Search"
+      animated="true"
+      showCancelButton
+    ></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
@@ -21,8 +27,12 @@
         </ion-label>
       </ion-item-divider>
 
-      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase"
-        [hidden]="session.hide">
+      <ion-item-sliding
+        *ngFor="let session of group.sessions"
+        #slidingItem
+        [attr.track]="session.tracks[0] | lowercase"
+        [hidden]="session.hide"
+      >
         <ion-item routerLink="/app/schedule/session/{{session.id}}">
           <ion-label>
             <h3>{{session.name}}</h3>
@@ -35,8 +45,11 @@
           <ion-item-option color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
             Favorite
           </ion-item-option>
-          <ion-item-option color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')"
-            *ngIf="segment === 'favorites'">
+          <ion-item-option
+            color="danger"
+            (click)="removeFavorite(slidingItem, session, 'Remove Favorite')"
+            *ngIf="segment === 'favorites'"
+          >
             Remove
           </ion-item-option>
         </ion-item-options>
