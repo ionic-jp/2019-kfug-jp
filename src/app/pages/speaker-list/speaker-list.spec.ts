@@ -12,9 +12,7 @@ const confDataSub = {};
 describe('SpeakerListPage', () => {
   let fixture, app;
   beforeEach(async(() => {
-    const actionSheetSpy = jasmine.createSpyObj('ActionSheetController', [
-      'create'
-    ]);
+    const actionSheetSpy = jasmine.createSpyObj('ActionSheetController', ['create']);
     const routerSpy = jasmine.createSpyObj('Router', ['navigateByUrl']);
     const iabSpy = jasmine.createSpyObj('InAppBrowser', ['create']);
 
@@ -25,8 +23,8 @@ describe('SpeakerListPage', () => {
         { provide: ActionSheetController, useValue: actionSheetSpy },
         { provide: InAppBrowser, useValue: iabSpy },
         { provide: Router, useValue: routerSpy },
-        { provide: ConferenceData, useValue: confDataSub }
-      ]
+        { provide: ConferenceData, useValue: confDataSub },
+      ],
     }).compileComponents();
   }));
   beforeEach(() => {

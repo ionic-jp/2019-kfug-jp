@@ -6,12 +6,12 @@ import { SessionDetailPage } from './session-detail';
 const routes: Routes = [
   {
     path: '',
-    component: SessionDetailPage
-  }
+    component: SessionDetailPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SessionDetailPageRoutingModule { }
+export class SessionDetailPageRoutingModule {}

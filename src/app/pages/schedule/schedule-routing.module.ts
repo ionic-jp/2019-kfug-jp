@@ -6,12 +6,12 @@ import { SchedulePage } from './schedule';
 const routes: Routes = [
   {
     path: '',
-    component: SchedulePage
-  }
+    component: SchedulePage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SchedulePageRoutingModule { }
+export class SchedulePageRoutingModule {}

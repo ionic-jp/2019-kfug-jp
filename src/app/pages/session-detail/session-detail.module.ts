@@ -6,13 +6,7 @@ import { SessionDetailPageRoutingModule } from './session-detail-routing.module'
 import { IonicModule } from '@ionic/angular';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    IonicModule,
-    SessionDetailPageRoutingModule
-  ],
-  declarations: [
-    SessionDetailPage,
-  ]
+  imports: [CommonModule, IonicModule, SessionDetailPageRoutingModule],
+  declarations: [SessionDetailPage],
 })
-export class SessionDetailModule { }
+export class SessionDetailModule {}

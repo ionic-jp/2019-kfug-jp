@@ -3,7 +3,6 @@ import { NgForm } from '@angular/forms';
 
 import { AlertController, ToastController } from '@ionic/angular';
 
-
 @Component({
   selector: 'page-support',
   templateUrl: 'support.html',
@@ -13,15 +12,12 @@ export class SupportPage {
   submitted = false;
   supportMessage: string;
 
-  constructor(
-    public alertCtrl: AlertController,
-    public toastCtrl: ToastController
-  ) { }
+  constructor(public alertCtrl: AlertController, public toastCtrl: ToastController) {}
 
   async ionViewDidEnter() {
     const toast = await this.toastCtrl.create({
       message: 'This does not actually send a support request.',
-      duration: 3000
+      duration: 3000,
     });
     await toast.present();
   }
@@ -35,7 +31,7 @@ export class SupportPage {
 
       const toast = await this.toastCtrl.create({
         message: 'Your support request has been sent.',
-        duration: 3000
+        duration: 3000,
       });
       await toast.present();
     }

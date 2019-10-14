@@ -10,11 +10,7 @@ import { ConferenceData } from '../../providers/conference-data';
 export class SpeakerDetailPage {
   speaker: any;
 
-  constructor(
-    private dataProvider: ConferenceData,
-    private router: Router,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private dataProvider: ConferenceData, private router: Router, private route: ActivatedRoute) {}
 
   ionViewWillEnter() {
     this.dataProvider.load().subscribe((data: any) => {

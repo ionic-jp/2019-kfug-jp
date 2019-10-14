@@ -28,8 +28,8 @@ export class SchedulePage implements OnInit {
     public loadingCtrl: LoadingController,
     public router: Router,
     public user: UserData,
-    public config: Config
-  ) { }
+    public config: Config,
+  ) {}
 
   ngOnInit() {
     this.updateSchedule();
@@ -43,10 +43,12 @@ export class SchedulePage implements OnInit {
       this.scheduleList.closeSlidingItems();
     }
 
-    this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {
-      this.shownSessions = data.shownSessions;
-      this.groups = data.groups;
-    });
+    this.confData
+      .getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment)
+      .subscribe((data: any) => {
+        this.shownSessions = data.shownSessions;
+        this.groups = data.groups;
+      });
   }
 
   async addFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: any) {
@@ -61,18 +63,19 @@ export class SchedulePage implements OnInit {
       // create an alert instance
       const alert = await this.alertCtrl.create({
         header: 'Favorite Added',
-        buttons: [{
-          text: 'OK',
-          handler: () => {
-            // close the sliding item
-            slidingItem.close();
-          }
-        }]
+        buttons: [
+          {
+            text: 'OK',
+            handler: () => {
+              // close the sliding item
+              slidingItem.close();
+            },
+          },
+        ],
       });
       // now present the alert on top of all other content
       await alert.present();
     }
-
   }
 
   async removeFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: any, title: string) {
@@ -86,7 +89,7 @@ export class SchedulePage implements OnInit {
             // they clicked the cancel button, do not remove the session
             // close the sliding item and hide the option buttons
             slidingItem.close();
-          }
+          },
         },
         {
           text: 'Remove',
@@ -97,9 +100,9 @@ export class SchedulePage implements OnInit {
 
             // close the sliding item and hide the option buttons
             slidingItem.close();
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     // now present the alert on top of all other content
     await alert.present();
@@ -108,7 +111,7 @@ export class SchedulePage implements OnInit {
   async openSocial(network: string, fab: HTMLIonFabElement) {
     const loading = await this.loadingCtrl.create({
       message: `Posting to ${network}`,
-      duration: (Math.random() * 1000) + 500
+      duration: Math.random() * 1000 + 500,
     });
     await loading.present();
     await loading.onWillDismiss();

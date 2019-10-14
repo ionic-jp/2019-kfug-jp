@@ -6,13 +6,7 @@ import { SpeakerDetailPageRoutingModule } from './speaker-detail-routing.module'
 import { IonicModule } from '@ionic/angular';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    IonicModule,
-    SpeakerDetailPageRoutingModule
-  ],
-  declarations: [
-    SpeakerDetailPage,
-  ]
+  imports: [CommonModule, IonicModule, SpeakerDetailPageRoutingModule],
+  declarations: [SpeakerDetailPage],
 })
-export class SpeakerDetailModule { }
+export class SpeakerDetailModule {}

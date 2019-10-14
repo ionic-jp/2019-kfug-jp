@@ -17,7 +17,7 @@ export class SpeakerListPage {
     public actionSheetCtrl: ActionSheetController,
     public confData: ConferenceData,
     public inAppBrowser: InAppBrowser,
-    public router: Router
+    public router: Router,
   ) {}
 
   ionViewDidEnter() {
@@ -27,10 +27,7 @@ export class SpeakerListPage {
   }
 
   goToSpeakerTwitter(speaker: any) {
-    this.inAppBrowser.create(
-      `https://twitter.com/${speaker.twitter}`,
-      '_blank'
-    );
+    this.inAppBrowser.create(`https://twitter.com/${speaker.twitter}`, '_blank');
   }
 
   async openSpeakerShare(speaker: any) {
@@ -40,27 +37,20 @@ export class SpeakerListPage {
         {
           text: 'Copy Link',
           handler: () => {
-            console.log(
-              'Copy link clicked on https://twitter.com/' + speaker.twitter
-            );
-            if (
-              (window as any)['cordova'] &&
-              (window as any)['cordova'].plugins.clipboard
-            ) {
-              (window as any)['cordova'].plugins.clipboard.copy(
-                'https://twitter.com/' + speaker.twitter
-              );
+            console.log('Copy link clicked on https://twitter.com/' + speaker.twitter);
+            if ((window as any)['cordova'] && (window as any)['cordova'].plugins.clipboard) {
+              (window as any)['cordova'].plugins.clipboard.copy('https://twitter.com/' + speaker.twitter);
             }
-          }
+          },
         },
         {
-          text: 'Share via ...'
+          text: 'Share via ...',
         },
         {
           text: 'Cancel',
-          role: 'cancel'
-        }
-      ]
+          role: 'cancel',
+        },
+      ],
     });
 
     await actionSheet.present();
@@ -77,16 +67,16 @@ export class SpeakerListPage {
           icon: mode !== 'ios' ? 'mail' : null,
           handler: () => {
             window.open('mailto:' + speaker.email);
-          }
+          },
         },
         {
           text: `Call ( ${speaker.phone} )`,
           icon: mode !== 'ios' ? 'call' : null,
           handler: () => {
             window.open('tel:' + speaker.phone);
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
 
     await actionSheet.present();

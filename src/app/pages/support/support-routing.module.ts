@@ -6,12 +6,12 @@ import { SupportPage } from './support';
 const routes: Routes = [
   {
     path: '',
-    component: SupportPage
-  }
+    component: SupportPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SupportPageRoutingModule { }
+export class SupportPageRoutingModule {}

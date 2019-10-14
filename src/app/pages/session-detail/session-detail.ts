@@ -7,18 +7,14 @@ import { UserData } from '../../providers/user-data';
 @Component({
   selector: 'page-session-detail',
   styleUrls: ['./session-detail.scss'],
-  templateUrl: 'session-detail.html'
+  templateUrl: 'session-detail.html',
 })
 export class SessionDetailPage {
   session: any;
   isFavorite = false;
   defaultHref = '';
 
-  constructor(
-    private dataProvider: ConferenceData,
-    private userProvider: UserData,
-    private route: ActivatedRoute
-  ) { }
+  constructor(private dataProvider: ConferenceData, private userProvider: UserData, private route: ActivatedRoute) {}
 
   ionViewWillEnter() {
     this.dataProvider.load().subscribe((data: any) => {
@@ -30,9 +26,7 @@ export class SessionDetailPage {
               if (session && session.id === sessionId) {
                 this.session = session;
 
-                this.isFavorite = this.userProvider.hasFavorite(
-                  this.session.name
-                );
+                this.isFavorite = this.userProvider.hasFavorite(this.session.name);
 
                 break;
               }

@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 import { UserData } from './user-data';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ConferenceData {
   data: any;
@@ -17,9 +17,7 @@ export class ConferenceData {
     if (this.data) {
       return of(this.data);
     } else {
-      return this.http
-        .get('assets/data/data.json')
-        .pipe(map(this.processData, this));
+      return this.http.get('assets/data/data.json').pipe(map(this.processData, this));
     }
   }
 
@@ -37,9 +35,7 @@ export class ConferenceData {
           session.speakers = [];
           if (session.speakerNames) {
             session.speakerNames.forEach((speakerName: any) => {
-              const speaker = this.data.speakers.find(
-                (s: any) => s.name === speakerName
-              );
+              const speaker = this.data.speakers.find((s: any) => s.name === speakerName);
               if (speaker) {
                 session.speakers.push(speaker);
                 speaker.sessions = speaker.sessions || [];
@@ -54,12 +50,7 @@ export class ConferenceData {
     return this.data;
   }
 
-  getTimeline(
-    dayIndex: number,
-    queryText = '',
-    excludeTracks: any[] = [],
-    segment = 'all'
-  ) {
+  getTimeline(dayIndex: number, queryText = '', excludeTracks: any[] = [], segment = 'all') {
     return this.load().pipe(
       map((data: any) => {
         const day = data.schedule[dayIndex];
@@ -84,16 +75,11 @@ export class ConferenceData {
         });
 
         return day;
-      })
+      }),
     );
   }
 
-  filterSession(
-    session: any,
-    queryWords: string[],
-    excludeTracks: any[],
-    segment: string
-  ) {
+  filterSession(session: any, queryWords: string[], excludeTracks: any[], segment: string) {
     let matchesQueryText = false;
     if (queryWords.length) {
       // of any query word is in the session name than it passes the query test
@@ -139,7 +125,7 @@ export class ConferenceData {
           const bName = b.name.split(' ').pop();
           return aName.localeCompare(bName);
         });
-      })
+      }),
     );
   }
 
@@ -147,7 +133,7 @@ export class ConferenceData {
     return this.load().pipe(
       map((data: any) => {
         return data.tracks.sort();
-      })
+      }),
     );
   }
 
@@ -155,7 +141,7 @@ export class ConferenceData {
     return this.load().pipe(
       map((data: any) => {
         return data.map;
-      })
+      }),
     );
   }
 }

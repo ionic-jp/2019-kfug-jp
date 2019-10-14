@@ -12,30 +12,30 @@ import { UserData } from './providers/user-data';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit {
   appPages = [
     {
       title: 'スケジュール',
       url: '/app/schedule',
-      icon: 'calendar'
+      icon: 'calendar',
     },
     {
       title: 'スピーカー',
       url: '/app/speakers',
-      icon: 'contacts'
+      icon: 'contacts',
     },
     {
       title: '地図',
       url: '/app/map',
-      icon: 'map'
+      icon: 'map',
     },
     {
       title: '概要',
       url: '/app/about',
-      icon: 'information-circle'
-    }
+      icon: 'information-circle',
+    },
   ];
   dark = false;
 
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
         message: '最新版を利用できるようになりました',
         showCloseButton: true,
         position: 'bottom',
-        closeButtonText: `アップデートする`
+        closeButtonText: `アップデートする`,
       });
 
       await toast.present();
@@ -71,7 +71,6 @@ export class AppComponent implements OnInit {
   }
 
   initializeApp() {
-    this.platform.ready().then(() => {
-    });
+    this.platform.ready().then(() => {});
   }
 }

@@ -22,10 +22,8 @@ import { SpeakerListModule } from '../speaker-list/speaker-list.module';
     SessionDetailModule,
     SpeakerDetailModule,
     SpeakerListModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
   ],
-  declarations: [
-    TabsPage,
-  ]
+  declarations: [TabsPage],
 })
-export class TabsModule { }
+export class TabsModule {}

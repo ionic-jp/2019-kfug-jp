@@ -5,12 +5,12 @@ import { SpeakerListPage } from './speaker-list';
 const routes: Routes = [
   {
     path: '',
-    component: SpeakerListPage
-  }
+    component: SpeakerListPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class SpeakerListPageRoutingModule {}

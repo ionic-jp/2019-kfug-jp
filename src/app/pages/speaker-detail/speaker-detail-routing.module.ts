@@ -6,12 +6,12 @@ import { SpeakerDetailPage } from './speaker-detail';
 const routes: Routes = [
   {
     path: '',
-    component: SpeakerDetailPage
-  }
+    component: SpeakerDetailPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SpeakerDetailPageRoutingModule { }
+export class SpeakerDetailPageRoutingModule {}

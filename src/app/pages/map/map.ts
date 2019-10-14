@@ -1,22 +1,19 @@
 import { Component, ElementRef, Inject, ViewChild, AfterViewInit } from '@angular/core';
 import { ConferenceData } from '../../providers/conference-data';
 import { Platform } from '@ionic/angular';
-import { DOCUMENT} from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 
 import { darkStyle } from './map-dark-style';
 
 @Component({
   selector: 'page-map',
   templateUrl: 'map.html',
-  styleUrls: ['./map.scss']
+  styleUrls: ['./map.scss'],
 })
 export class MapPage implements AfterViewInit {
   @ViewChild('mapCanvas', { static: true }) mapElement: ElementRef;
 
-  constructor(
-    @Inject(DOCUMENT) private doc: Document,
-    public confData: ConferenceData,
-    public platform: Platform) {}
+  constructor(@Inject(DOCUMENT) private doc: Document, public confData: ConferenceData, public platform: Platform) {}
 
   async ngAfterViewInit() {
     const appEl = this.doc.querySelector('ion-app');
@@ -26,9 +23,7 @@ export class MapPage implements AfterViewInit {
       style = darkStyle;
     }
 
-    const googleMaps = await getGoogleMaps(
-      'AIzaSyB8pf6ZdFQj5qw7rc_HSGrhUwQKfIe9ICw'
-    );
+    const googleMaps = await getGoogleMaps('AIzaSyB8pf6ZdFQj5qw7rc_HSGrhUwQKfIe9ICw');
 
     let map;
 
@@ -38,18 +33,18 @@ export class MapPage implements AfterViewInit {
       map = new googleMaps.Map(mapEle, {
         center: mapData.find((d: any) => d.center),
         zoom: 16,
-        styles: style
+        styles: style,
       });
 
       mapData.forEach((markerData: any) => {
         const infoWindow = new googleMaps.InfoWindow({
-          content: `<h5>${markerData.name}</h5>`
+          content: `<h5>${markerData.name}</h5>`,
         });
 
         const marker = new googleMaps.Marker({
           position: markerData,
           map,
-          title: markerData.name
+          title: markerData.name,
         });
 
         marker.addListener('click', () => {
@@ -62,21 +57,21 @@ export class MapPage implements AfterViewInit {
       });
     });
 
-    const observer = new MutationObserver(function (mutations) {
-      mutations.forEach((mutation) => {
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(mutation => {
         if (mutation.attributeName === 'class') {
           const el = mutation.target as HTMLElement;
           isDark = el.classList.contains('dark-theme');
           if (map && isDark) {
-            map.setOptions({styles: darkStyle});
+            map.setOptions({ styles: darkStyle });
           } else if (map) {
-            map.setOptions({styles: []});
+            map.setOptions({ styles: [] });
           }
         }
       });
     });
     observer.observe(appEl, {
-      attributes: true
+      attributes: true,
     });
   }
 }
@@ -104,4 +99,3 @@ function getGoogleMaps(apiKey: string): Promise<any> {
     };
   });
 }
-

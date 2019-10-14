@@ -46,8 +46,8 @@ describe('AppComponent', () => {
         { provide: StatusBar, useValue: statusBarSpy },
         { provide: SplashScreen, useValue: splashScreenSpy },
         { provide: SwUpdate, useValue: swUpdateSpy },
-        { provide: Platform, useValue: platformSpy }
-      ]
+        { provide: Platform, useValue: platformSpy },
+      ],
     }).compileComponents();
   }));
   beforeEach(() => {

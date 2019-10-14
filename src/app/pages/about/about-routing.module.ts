@@ -6,12 +6,12 @@ import { AboutPage } from './about';
 const routes: Routes = [
   {
     path: '',
-    component: AboutPage
-  }
+    component: AboutPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AboutPageRoutingModule { }
+export class AboutPageRoutingModule {}

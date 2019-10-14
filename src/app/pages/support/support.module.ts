@@ -6,14 +6,7 @@ import { SupportPage } from './support';
 import { SupportPageRoutingModule } from './support-routing.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    SupportPageRoutingModule
-  ],
-  declarations: [
-    SupportPage,
-  ]
+  imports: [CommonModule, FormsModule, IonicModule, SupportPageRoutingModule],
+  declarations: [SupportPage],
 })
-export class SupportModule { }
+export class SupportModule {}

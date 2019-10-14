@@ -10,5 +10,5 @@ import { PopoverController } from '@ionic/angular';
 export class AboutPage {
   conferenceDate = '2047-05-17';
 
-  constructor(public popoverCtrl: PopoverController) { }
+  constructor(public popoverCtrl: PopoverController) {}
 }

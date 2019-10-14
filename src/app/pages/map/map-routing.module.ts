@@ -6,12 +6,12 @@ import { MapPage } from './map';
 const routes: Routes = [
   {
     path: '',
-    component: MapPage
-  }
+    component: MapPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class MapPageRoutingModule { }
+export class MapPageRoutingModule {}
