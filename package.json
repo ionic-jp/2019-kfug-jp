@@ -11,7 +11,7 @@
     "test": "ng test --watch=false",
     "lint": "ng lint",
     "lint-staged": "lint-staged",
-    "formatter": "prettier --parser typescript --single-quote --write \"./**/*.ts\""
+    "formatter": "prettier --parser typescript --write \"./**/*.ts\""
   },
   "repository": {
     "type": "git",
