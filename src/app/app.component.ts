@@ -32,9 +32,9 @@ export class AppComponent implements OnInit {
       icon: 'map',
     },
     {
-      title: '概要',
+      title: 'その他',
       url: '/app/about',
-      icon: 'information-circle',
+      icon: 'settings',
     },
   ];
   dark = false;
@@ -67,6 +67,11 @@ export class AppComponent implements OnInit {
         .onDidDismiss()
         .then(() => this.swUpdate.activateUpdate())
         .then(() => window.location.reload());
+    });
+
+    this.events.subscribe('theme', theme => {
+      console.log(['theme', theme]);
+      this.dark = theme;
     });
   }
 

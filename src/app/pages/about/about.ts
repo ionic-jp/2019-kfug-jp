@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { PopoverController } from '@ionic/angular';
+import { Events, PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'page-about',
@@ -9,6 +9,11 @@ import { PopoverController } from '@ionic/angular';
 })
 export class AboutPage {
   conferenceDate = '2047-05-17';
+  dark = false;
 
-  constructor(public popoverCtrl: PopoverController) {}
+  constructor(public popoverCtrl: PopoverController, public events: Events) {}
+
+  changeTheme() {
+    this.events.publish('theme', this.dark);
+  }
 }
