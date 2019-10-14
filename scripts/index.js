@@ -48,9 +48,7 @@ const writeFile = (path, data) => {
   });
 };
 
-let i = 0;
 const sessions = groups.map(group => {
-  i++;
   return {
     time: group.time,
     sessions: group.sessionKey.map(key => {
