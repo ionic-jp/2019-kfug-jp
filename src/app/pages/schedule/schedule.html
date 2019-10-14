@@ -1,6 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search"></ion-searchbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-card-header>
+      <ion-card-title>スケジュール</ion-card-title>
+    </ion-card-header>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar  [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search" animated="true" showCancelButton></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 

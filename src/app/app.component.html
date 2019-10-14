@@ -31,16 +31,22 @@
 
           <ion-menu-toggle autoHide="false">
             <ion-item routerLink="/support" routerDirection="root">
-              <ion-icon slot="start" name="help"></ion-icon>
+              <ion-icon slot="start" name="mail"></ion-icon>
               <ion-label>
                 問い合わせ
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
+        </ion-list>
+
+        <ion-list>
+          <ion-list-header>
+            Theme
+          </ion-list-header>
 
           <ion-item>
             <ion-label>
-              Dark Theme
+              ダークテーマ
             </ion-label>
             <ion-toggle [(ngModel)]="dark"></ion-toggle>
           </ion-item>

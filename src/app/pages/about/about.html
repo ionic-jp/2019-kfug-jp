@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>About</ion-title>
+    <ion-title>概要</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,32 +12,27 @@
     <img src="assets/img/ionic-logo-white.svg" alt="ionic logo">
   </div>
   <div class="about-info">
-    <h4 class="ion-padding-start">Ionic Conference</h4>
+    <h4 class="ion-padding-start">FRONTEND CONFERENCE 2019</h4>
 
     <ion-list lines="none">
       <ion-item>
         <ion-icon name="calendar" slot="start"></ion-icon>
-        <ion-label position="stacked">Date</ion-label>
-        <ion-datetime displayFormat="MMM DD, YYYY" max="2056" [(ngModel)]="conferenceDate"></ion-datetime>
+        <ion-text>2019/11/02</ion-text>
       </ion-item>
 
       <ion-item>
         <ion-icon name="pin" slot="start"></ion-icon>
-        <ion-label position="stacked">Location</ion-label>
-        <ion-select>
-          <ion-select-option value="madison" selected>Madison, WI</ion-select-option>
-          <ion-select-option value="austin">Austin, TX</ion-select-option>
-          <ion-select-option value="chicago">Chicago, IL</ion-select-option>
-          <ion-select-option value="seattle">Seattle, WA</ion-select-option>
-        </ion-select>
+        <ion-text>グランフロント大阪タワーB</ion-text>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-icon name="crop" slot="start"></ion-icon>
+        <ion-text>
+          2016, 2017, 2018年とたくさんの人に来場頂いた 関西最大級のフロントエンド製作者向けイベント FRONTEND CONFERENCE が今年も開催されます！
+          例年通り、 デザイナもエンジニアも、職種問わず Webに携わるすべての人が楽しめるイベントとして 様々なセッション・企画等をご用意！Web制作に携わるあなたのご参加お待ちしております！
+        </ion-text>
       </ion-item>
     </ion-list>
-
-    <p class="ion-padding-start ion-padding-end">
-      The Ionic Conference is a one-day conference featuring talks from the Ionic team. It is focused on Ionic applications being
-      built with Ionic 2. This includes migrating apps from Ionic 1 to Ionic 2, Angular concepts, Webpack, Sass, and many
-      other technologies used in Ionic 2. Tickets are completely sold out, and we’re expecting more than 1000 developers
-      – making this the largest Ionic conference ever!
-    </p>
   </div>
 </ion-content>
