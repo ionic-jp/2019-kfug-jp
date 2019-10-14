@@ -27,13 +27,13 @@ export class AppComponent implements OnInit {
       icon: 'contacts',
     },
     {
-      title: '地図',
-      url: '/app/map',
-      icon: 'map',
+      title: 'コミュニティ',
+      url: '/app/community',
+      icon: 'beer',
     },
     {
       title: 'その他',
-      url: '/app/about',
+      url: '/app/settings',
       icon: 'settings',
     },
   ];

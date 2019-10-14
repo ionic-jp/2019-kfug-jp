@@ -39,20 +39,20 @@ const routes: Routes = [
         ],
       },
       {
-        path: 'map',
+        path: 'settings',
         children: [
           {
             path: '',
-            loadChildren: () => import('../map/map.module').then(m => m.MapModule),
+            loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule),
           },
         ],
       },
       {
-        path: 'about',
+        path: 'community',
         children: [
           {
             path: '',
-            loadChildren: () => import('../about/about.module').then(m => m.AboutModule),
+            loadChildren: () => import('../community/community.module').then(m => m.CommunityPageModule),
           },
         ],
       },

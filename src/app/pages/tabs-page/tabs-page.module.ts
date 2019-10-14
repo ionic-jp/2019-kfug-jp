@@ -5,8 +5,8 @@ import { IonicModule } from '@ionic/angular';
 import { TabsPage } from './tabs-page';
 import { TabsPageRoutingModule } from './tabs-page-routing.module';
 
-import { AboutModule } from '../about/about.module';
-import { MapModule } from '../map/map.module';
+import { SettingsPageModule } from '../settings/settings.module';
+import { CommunityPageModule } from '../community/community.module';
 import { ScheduleModule } from '../schedule/schedule.module';
 import { SessionDetailModule } from '../session-detail/session-detail.module';
 import { SpeakerDetailModule } from '../speaker-detail/speaker-detail.module';
@@ -14,10 +14,10 @@ import { SpeakerListModule } from '../speaker-list/speaker-list.module';
 
 @NgModule({
   imports: [
-    AboutModule,
+    SettingsPageModule,
     CommonModule,
     IonicModule,
-    MapModule,
+    CommunityPageModule,
     ScheduleModule,
     SessionDetailModule,
     SpeakerDetailModule,
