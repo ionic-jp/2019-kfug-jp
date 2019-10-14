@@ -1,6 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { ActionSheetController } from '@ionic/angular';
 
 import { ConferenceData } from '../../providers/conference-data';
@@ -13,12 +12,7 @@ import { ConferenceData } from '../../providers/conference-data';
 export class SpeakerListPage {
   speakers: any[] = [];
 
-  constructor(
-    public actionSheetCtrl: ActionSheetController,
-    public confData: ConferenceData,
-    public inAppBrowser: InAppBrowser,
-    public router: Router,
-  ) {}
+  constructor(public actionSheetCtrl: ActionSheetController, public confData: ConferenceData, public router: Router) {}
 
   ionViewDidEnter() {
     this.confData.getSpeakers().subscribe((speakers: any[]) => {
@@ -27,7 +21,7 @@ export class SpeakerListPage {
   }
 
   goToSpeakerTwitter(speaker: any) {
-    this.inAppBrowser.create(`https://twitter.com/${speaker.twitter}`, '_blank');
+    // this.inAppBrowser.create(`https://twitter.com/${speaker.twitter}`, '_blank');
   }
 
   async openSpeakerShare(speaker: any) {

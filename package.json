@@ -87,7 +87,11 @@
   ],
   "lint-staged": {
     "*.ts": [
-      "prettier --parser typescript --single-quote --write",
+      "prettier --parser typescript --write",
+      "git add"
+    ],
+    "*.html": [
+      "prettier --parser html --write",
       "git add"
     ]
   }
