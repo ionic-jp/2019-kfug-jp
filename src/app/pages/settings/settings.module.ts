@@ -18,4 +18,4 @@ const routes: Routes = [
   imports: [CommonModule, FormsModule, IonicModule, RouterModule.forChild(routes)],
   declarations: [SettingsPage],
 })
-export class SettingsPageModule {}
+export class SettingsModule {}

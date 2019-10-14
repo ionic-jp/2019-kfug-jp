@@ -43,7 +43,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule),
+            loadChildren: () => import('../settings/settings.module').then(m => m.SettingsModule),
           },
         ],
       },
@@ -52,7 +52,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../community/community.module').then(m => m.CommunityPageModule),
+            loadChildren: () => import('../community/community.module').then(m => m.CommunityModule),
           },
         ],
       },

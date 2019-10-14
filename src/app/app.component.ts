@@ -69,10 +69,7 @@ export class AppComponent implements OnInit {
         .then(() => window.location.reload());
     });
 
-    this.events.subscribe('theme', theme => {
-      console.log(['theme', theme]);
-      this.dark = theme;
-    });
+    this.events.subscribe('theme', theme => (this.dark = theme));
   }
 
   initializeApp() {
