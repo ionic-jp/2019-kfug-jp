@@ -10,7 +10,6 @@
               "name": "モダンJavaScript再入門",
               "description": "Webサイト・Webアプリ制作への高まる要求に耐えられるようにJavaScriptは進化を続けてきました。\n特にこの約5年間で、JavaScriptはモダンなプログラミング言語へと大きな進化を遂げ、開発効率は劇的に高まりました。\n一方で、古いままの情報も多く、最新技術をキャッチアップするのは大変な面もあります。\n本セッションでは、新しくJavaScriptを学びたい人や昔に勉強した人、なんとなく書いている人が入門・再入門できるように、JavaScriptのモダンな書き方をなるべく実用的な例をまじえてご紹介します。\nまた、将来のWebの変化についていけるように、これから先のJavaScriptがどのように進化していくのかの展望についてもお話しします。",
               "speakerNames": ["尾上 洋介"],
-              "speakerIcon": [""],
               "timeStart": "11:00",
               "timeEnd": "11:45",
               "location": "A1",
@@ -115,143 +114,38 @@
 
   "speakers": [
     {
-      "name": "Burt Bear",
-      "profilePic": "assets/img/speakers/bear.jpg",
-      "twitter": "ionicframework",
-      "about": "Burt is a Bear.",
-      "location": "Everywhere",
-      "email": "burt@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "1"
+      "name": "コンチ",
+      "company": "ベルフェイス株式会社",
+      "hall": "B-3",
+      "time": "13:00",
+      "detail": "フルリモートで働くUIデザイナです（名古屋在住）。プロトタイプの開発を得意にしており、作っては壊すを繰り返して正解にたどり着くような改善を前提した開発をしています。\n過去に「俺の嫁が可愛い」というサイトを3時間で作ってバズりました。\n",
+      "image": "conti.jpeg",
+      "twitter": "https://twitter.com/maki_saki",
+      "facebook": null,
+      "link": "https://blog.cntlog.net/",
+      "sessions": [{"name": "フルリモートで働くUIデザイナです（名古屋在住）。プロトタイプの開発を得意にしており、"}]
     },
     {
-      "name": "Charlie Cheetah",
-      "profilePic": "assets/img/speakers/cheetah.jpg",
-      "twitter": "ionicframework",
-      "about": "Charlie is a Cheetah.",
-      "location": "Everywhere",
-      "email": "charlie@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "2"
+      "name": "浜田 真成",
+      "company": "ヤフー株式会社 / 株式会社GYAO",
+      "hall": "C-6",
+      "time": "15:15",
+      "detail": "ヤフーでフロントエンド技術領域、デザイン領域を担当するエンジニア。映像事業領域のGYAOのWEBフロントエンドを統括し、プレーヤーやBFFなど幅広く開発を行う。WEB+DB PRESS の連載記事としてStorybook、HeadlessCMSの記事を執筆。\n",
+      "image": "hamadamasanari.png",
+      "twitter": "https://twitter.com/narirow",
+      "facebook": null,
+      "link": "https://speakerdeck.com/narirou"
     },
     {
-      "name": "Donald Duck",
-      "profilePic": "assets/img/speakers/duck.jpg",
-      "twitter": "ionicframework",
-      "about": "Donald is a Duck.",
-      "location": "Everywhere",
-      "email": "donald@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "3"
-    },
-    {
-      "name": "Eva Eagle",
-      "profilePic": "assets/img/speakers/eagle.jpg",
-      "twitter": "ionicframework",
-      "about": "Eva is an Eagle.",
-      "location": "Everywhere",
-      "email": "eva@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "4"
-    },
-    {
-      "name": "Ellie Elephant",
-      "profilePic": "assets/img/speakers/elephant.jpg",
-      "twitter": "ionicframework",
-      "about": "Ellie is an Elephant.",
-      "location": "Everywhere",
-      "email": "ellie@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "5"
-    },
-    {
-      "name": "Gino Giraffe",
-      "profilePic": "assets/img/speakers/giraffe.jpg",
-      "twitter": "ionicframework",
-      "about": "Gino is a Giraffe.",
-      "location": "Everywhere",
-      "email": "gino@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "6"
-    },
-    {
-      "name": "Isabella Iguana",
-      "profilePic": "assets/img/speakers/iguana.jpg",
-      "twitter": "ionicframework",
-      "about": "Isabella is an Iguana.",
-      "location": "Everywhere",
-      "email": "isabella@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "7"
-    },
-    {
-      "name": "Karl Kitten",
-      "profilePic": "assets/img/speakers/kitten.jpg",
-      "twitter": "ionicframework",
-      "about": "Karl is a Kitten.",
-      "location": "Everywhere",
-      "email": "karl@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "8"
-    },
-    {
-      "name": "Lionel Lion",
-      "profilePic": "assets/img/speakers/lion.jpg",
-      "twitter": "ionicframework",
-      "about": "Lionel is a Lion.",
-      "location": "Everywhere",
-      "email": "lionel@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "9"
-    },
-    {
-      "name": "Molly Mouse",
-      "profilePic": "assets/img/speakers/mouse.jpg",
-      "twitter": "ionicframework",
-      "about": "Molly is a Mouse.",
-      "location": "Everywhere",
-      "email": "molly@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "10"
-    },
-    {
-      "name": "Paul Puppy",
-      "profilePic": "assets/img/speakers/puppy.jpg",
-      "twitter": "ionicframework",
-      "about": "Paul is a Puppy.",
-      "location": "Everywhere",
-      "email": "paul@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "11"
-    },
-    {
-      "name": "Rachel Rabbit",
-      "profilePic": "assets/img/speakers/rabbit.jpg",
-      "twitter": "ionicframework",
-      "about": "Rachel is a Rabbit.",
-      "location": "Everywhere",
-      "email": "rachel@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "12"
-    },
-    {
-      "name": "Ted Turtle",
-      "profilePic": "assets/img/speakers/turtle.jpg",
-      "twitter": "ionicframework",
-      "about": "Ted is a Turtle.",
-      "location": "Everywhere",
-      "email": "ted@example.com",
-      "phone": "+1-541-754-3010",
-      "id": "13"
-    }
-  ],
-
-  "map": [
-    {
-      "name": "グランフロント大阪タワーB",
-      "lat": 34.705413,
-      "lng": 135.494633,
-      "center": true
+      "name": "花谷拓磨(@potato4d)",
+      "company": "ElevenBack LLC. / LINE株式会社",
+      "hall": "A-6",
+      "time": "15:15",
+      "detail": "ユーザーエクスペリエンスとクラウドネイティブを愛するフロントエンドエンジニア。ある時は開発者、またある時は会社代表をしています。Vue.js / React.js 日本語公式ドキュメント管理者、Nuxt.js ビギナーズガイド著者。\n",
+      "image": "potato4d.jpg",
+      "twitter": "https://twitter.com/potato4d",
+      "facebook": "https://facebook.com/potato4d",
+      "link": "https://elevenback.co.jp"
     }
   ],
 
