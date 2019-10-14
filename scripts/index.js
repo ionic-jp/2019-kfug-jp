@@ -74,7 +74,7 @@ const sessions = groups.map(group => {
 
 const data = {
   schedule: [{
-    date: "first",
+    date: "firstDay",
     groups: sessions,
   }],
   speakers: speakers(),
