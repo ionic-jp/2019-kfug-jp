@@ -1,10 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-card-header>
-      <ion-card-title>スケジュール</ion-card-title>
-    </ion-card-header>
+    <ion-title>スケジュール</ion-title>
   </ion-toolbar>
-  <ion-toolbar>
+  <ion-toolbar *ngIf="!ios">
     <ion-searchbar
       [(ngModel)]="queryText"
       (ionChange)="updateSchedule()"
@@ -16,6 +14,23 @@
 </ion-header>
 
 <ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons collapse="true">
+        <ion-title size="large" style="font-size: 30px">スケジュール</ion-title>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-searchbar
+        [(ngModel)]="queryText"
+        (ionChange)="updateSchedule()"
+        placeholder="絞り込み"
+        animated="true"
+        showCancelButton
+      ></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+
   <ion-list #scheduleList [hidden]="shownSessions === 0">
     <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
       <ion-item-divider sticky>
