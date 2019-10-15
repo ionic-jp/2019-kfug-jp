@@ -5,6 +5,7 @@ import { MenuController, Platform, ToastController } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
 
 import { UserData } from './providers/user-data';
+import { Events } from './providers/events';
 
 @Component({
   selector: 'app-root',
@@ -45,6 +46,7 @@ export class AppComponent implements OnInit {
     private userData: UserData,
     private swUpdate: SwUpdate,
     private toastCtrl: ToastController,
+    private events: Events,
   ) {
     this.initializeApp();
   }
@@ -65,7 +67,14 @@ export class AppComponent implements OnInit {
         .then(() => window.location.reload());
     });
 
-    // this.events.subscribe('theme', theme => (this.dark = theme));
+    if ('theme' in localStorage) {
+      this.dark = localStorage.theme;
+    }
+
+    this.events.subscribe('theme', theme => {
+      localStorage.theme = theme;
+      this.dark = theme;
+    });
   }
 
   initializeApp() {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Events } from '../../providers/events';
 
 @Component({
   selector: 'settings',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class SettingsPage {
   dark = false;
-  constructor() {}
+  constructor(private events: Events) {}
 
   changeTheme() {
-    // this.events.publish('theme', this.dark);
+    this.events.publish('theme', this.dark);
   }
 }
