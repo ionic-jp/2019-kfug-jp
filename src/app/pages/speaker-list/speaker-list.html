@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Speakers</ion-title>
+    <ion-title>スピーカー</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,20 +12,19 @@
           <ion-card-header class="ion-text-center" style="border-bottom: 1px solid #f0f0f0">
             <ion-item lines="none" class="ion-no-padding ion-padding-top ion-padding-bottom">
               <ion-avatar slot="start" style="width: 48px; height: 48px">
-                <img
-                  [src]="speaker.image ? 'assets/img/speakers/' + speaker.image : null"
-                  [alt]="speaker.name + ' profile picture'"
-                />
+                <img [src]="'assets/img/speakers/' + speaker.image" [alt]="speaker.name + ' profile picture'" />
               </ion-avatar>
               <section>
-                <ion-label>{{speaker.name}}</ion-label>
+                <ion-label style="font-size: 1.1rem">{{speaker.name}}</ion-label>
                 <ion-label color="dark"><small>{{speaker.company}}</small></ion-label>
               </section>
             </ion-item>
           </ion-card-header>
 
           <ion-card-content>
-            <ion-text class="ion-padding" style="display: block;">{{speaker.detail}}</ion-text>
+            <ion-text class="ion-padding" style="font-size: 0.9rem; display: block;"
+              >{{speaker.detail.slice(0, 80)}}<span *ngIf="speaker.detail.length > 80">...</span></ion-text
+            >
           </ion-card-content>
         </ion-card>
       </ion-col>
