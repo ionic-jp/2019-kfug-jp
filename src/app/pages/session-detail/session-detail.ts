@@ -33,8 +33,8 @@ export class SessionDetailPage {
       }
       for (const group of data.schedule[0].groups) {
         this.session = group.sessions.find(session => session.id === this.sessionId);
-        this.isFavorite = this.userProvider.hasFavorite(this.session.id);
         if (this.session) {
+          this.isFavorite = this.userProvider.hasFavorite(this.session.id);
           break;
         }
       }
