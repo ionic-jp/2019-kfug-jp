@@ -12,6 +12,9 @@
               "speakerNames": [
                 "尾上 洋介"
               ],
+              "speakerPics": [
+                "onoueyosuke.png"
+              ],
               "timeStart": "11:00",
               "timeEnd": "11:40",
               "location": "A-1",
@@ -26,6 +29,9 @@
               "speakerNames": [
                 "山下 一樹"
               ],
+              "speakerPics": [
+                "yamashitakazuki.jpg"
+              ],
               "timeStart": "11:00",
               "timeEnd": "11:40",
               "location": "B-1",
@@ -39,6 +45,9 @@
               "description": "PWAにおけるキャッシュを実現する機能はSWと勘違いされがちですが、実はCache APIがキャッシュ機能を提供しています。本セッションでは、PWAにおけるキャッシュ機能をSWとCache APIに分解し、Cache APIの紹介、利用方法を解説します。\n",
               "speakerNames": [
                 "田口 航"
+              ],
+              "speakerPics": [
+                "taguchiwataru.png"
               ],
               "timeStart": "11:00",
               "timeEnd": "11:40",
@@ -59,6 +68,9 @@
               "speakerNames": [
                 "okunokentaro"
               ],
+              "speakerPics": [
+                "okunokentaro.jpg"
+              ],
               "timeStart": "11:45",
               "timeEnd": "12:25",
               "location": "A-2",
@@ -73,6 +85,9 @@
               "speakerNames": [
                 "榊原 昌彦"
               ],
+              "speakerPics": [
+                "sakakibaramasahiko.jpg"
+              ],
               "timeStart": "11:45",
               "timeEnd": "12:25",
               "location": "B-2",
@@ -86,6 +101,9 @@
               "description": "私が配属された部署では jQuery や Vue.js を用いてフロントエンドの開発を行っています。\n配属されるまで JavaScript や jQuery の経験がほとんどありませんでした。\n研修で Vue.js を学習し始めて、Vue.js は機能が豊富で、シンプルな記述法がわかりやすいと感じました。\nVue.js を触って、どんな機能が便利だったか、どういう点でわかりやすい記述法だと感じたかお話しします。\nまた、フロントエンドフレームワーク未経験者がjQuery とVue.js を同時に1年間学習して感じたこと、得られたこと、Vue.js と jQuery を比較してそれぞれの機能や記述法で感じたことをお話しします。\n\nVue.js の学習として技術書や公式のドキュメントを参照したり、サンプルプログラムを参照しながら実際にコードを書いたりしました。\nやってきた学習法で良かったこと、悪かったこと、学習でこうすればよかったと思ったこと、学習で何につまづいてどう克服したかについてお話しします。\n",
               "speakerNames": [
                 "川又由雅"
+              ],
+              "speakerPics": [
+                "kawamatayuga.jpeg"
               ],
               "timeStart": "11:45",
               "timeEnd": "12:25",
@@ -106,6 +124,9 @@
               "speakerNames": [
                 "松下 絵梨"
               ],
+              "speakerPics": [
+                "matsushitaeri.jpg"
+              ],
               "timeStart": "13:00",
               "timeEnd": "13:40",
               "location": "A-3",
@@ -120,6 +141,9 @@
               "speakerNames": [
                 "コンチ"
               ],
+              "speakerPics": [
+                "conti.jpeg"
+              ],
               "timeStart": "13:00",
               "timeEnd": "13:40",
               "location": "B-3",
@@ -133,6 +157,9 @@
               "description": "フロントエンドはレガシーとは無縁? いいえ、そんなことはありません。数年前に作られたアプリケーションは、フレームワークの進化、開発環境の進化とともにどうしてもレガシーとなり、さらには負債となってしまいます。\n本セッションでは、そのような負債と戦うべく行った、設計、実装や、作業の進め方などをお話します。\n",
               "speakerNames": [
                 "小島大基"
+              ],
+              "speakerPics": [
+                "kojimadaiki.jpg"
               ],
               "timeStart": "13:00",
               "timeEnd": "13:40",
@@ -153,6 +180,9 @@
               "speakerNames": [
                 "キリル ワシルツォフ"
               ],
+              "speakerPics": [
+                "kirillvasiltsov.jpeg"
+              ],
               "timeStart": "13:45",
               "timeEnd": "14:25",
               "location": "A-4",
@@ -166,6 +196,9 @@
               "description": "Nuxt.js + FirebaseでWebアプリにチャット機能の導入する際に工夫した点、感じたメリット・デメリットについてお話します。\n例えば、リアルタイムで更新されるチャットを実現する際にロングポーリング、Websocket、Firebaseで検討した点。実際にFirebaseを導入して、FirebaseとNuxt.jsでの全体のアーキテクチャをどうしたか。導入してから出てきた問題でCloud Functionsによる処理の遅延の話などをします。\nその他には、フロント周りでボトルネックになっていた処理を調査し、高速化した話をします。\n",
               "speakerNames": [
                 "カンボ@沖縄(鈴木孝之)"
+              ],
+              "speakerPics": [
+                "suzukitakayuki.jpg"
               ],
               "timeStart": "13:45",
               "timeEnd": "14:25",
@@ -186,6 +219,9 @@
               "speakerNames": [
                 "神保嘉秀"
               ],
+              "speakerPics": [
+                "jimboyoshihide.png"
+              ],
               "timeStart": "14:30",
               "timeEnd": "15:10",
               "location": "B-5",
@@ -205,6 +241,9 @@
               "speakerNames": [
                 "花谷拓磨(@potato4d)"
               ],
+              "speakerPics": [
+                "potato4d.jpg"
+              ],
               "timeStart": "15:15",
               "timeEnd": "15:55",
               "location": "A-6",
@@ -219,6 +258,9 @@
               "speakerNames": [
                 "大木尊紀"
               ],
+              "speakerPics": [
+                "okitakanori.jpg"
+              ],
               "timeStart": "15:15",
               "timeEnd": "15:55",
               "location": "B-6",
@@ -232,6 +274,9 @@
               "description": "「映像プレーヤー」を作成したことはあるでしょうか？\n作成したことはなくても、おそらく日々様々なプレーヤーを利用していると思います。\nHTML5で定義されるHTML Video elementからは、メディア状態・エラー・DRM複合処理・広告再生・読み込み、などブラウザごとに多種多様なイベントが発生します。プレーヤーはこのイベントに加え、ユーザーから入力される複雑な操作も併せて処理する必要があります。UIや内部要件を実装するには、このイベント制御を適切にハンドルし、のりこなすことが必要不可欠なのです。\n今回のセッションでは、複雑な処理をReactHooksを用いてHTML Video elementを制御する手法を、現在映像サービス「GYAO!」でプロダクションで使用されているプレーヤーを事例に、フロントエンドの観点からご紹介します。\n",
               "speakerNames": [
                 "浜田 真成"
+              ],
+              "speakerPics": [
+                "hamadamasanari.png"
               ],
               "timeStart": "15:15",
               "timeEnd": "15:55",
@@ -252,6 +297,9 @@
               "speakerNames": [
                 "平野 昌士"
               ],
+              "speakerPics": [
+                "hiranomasashi.png"
+              ],
               "timeStart": "16:00",
               "timeEnd": "16:40",
               "location": "A-7",
@@ -266,6 +314,9 @@
               "speakerNames": [
                 "大西 優司"
               ],
+              "speakerPics": [
+                "onishiyuji.jpg"
+              ],
               "timeStart": "16:00",
               "timeEnd": "16:40",
               "location": "B-7",
@@ -279,6 +330,9 @@
               "description": "Web 制作現場で軽視されがちなディレションの価値を再確認するための、ディレクション入門。\nディレクションとはなにかを再考しながら、制作現場におけるディレクションの価値を考えてみましょう。\n\nディレクションの補助ツールに Gihub を用いて、\n様々なディレクションの要点をツールベースでどの様にサポートしていくかも紹介していきます。\nGithub を用いなくても、スムーズなディレクション進行にどのようなツール活用が必要かの助けになればと思います。\n",
               "speakerNames": [
                 "後藤知宏"
+              ],
+              "speakerPics": [
+                "mikakane.jpg"
               ],
               "timeStart": "16:00",
               "timeEnd": "16:40",
