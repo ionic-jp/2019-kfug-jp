@@ -38,12 +38,12 @@
         style="--padding-top: 8px; --padding-bottom: 8px;"
         button="true"
         lines="none"
-        *ngFor="let speaker of session.speakerNames; let i = index;"
+        *ngFor="let speaker of session.speakers; let i = index;"
       >
         <ion-avatar slot="start">
-          <img [src]="'assets/img/speakers/' + session.speakerPics[i]" [alt]="speaker + ' profile picture'" />
+          <img [src]="'assets/img/speakers/' + speaker.image" [alt]="speaker.name + ' profile picture'" />
         </ion-avatar>
-        <ion-label>{{speaker}}</ion-label>
+        <ion-label>{{speaker.name}}</ion-label>
       </ion-item>
     </ion-list>
   </div>

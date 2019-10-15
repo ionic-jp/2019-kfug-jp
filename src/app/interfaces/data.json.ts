@@ -17,9 +17,10 @@ export interface IGroups {
 export interface ISession {
   name: string;
   description: string;
-  speakers?: string[];
-  speakerNames: string[];
-  speakerPics: string[];
+  speakers: {
+    name: string;
+    image: string;
+  }[];
   timeStart: string;
   timeEnd: string;
   location: string;

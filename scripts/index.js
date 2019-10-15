@@ -57,8 +57,12 @@ const sessions = groups.map(group => {
           return {
             name: s.session.title,
             description: s.session.detail,
-            speakerNames: [s.name],
-            speakerPics: [s.image],
+            speakers: [
+              {
+                name: s.name,
+                image: s.image,
+              }
+            ],
             timeStart: group.time,
             timeEnd: group.end,
             location: s.hall,
