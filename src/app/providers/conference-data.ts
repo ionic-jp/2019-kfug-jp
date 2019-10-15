@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { IDataJson, ISchedule, ISession } from '../interfaces/data.json';
 
 import { UserData } from './user-data';
 
@@ -13,28 +14,28 @@ export class ConferenceData {
 
   constructor(public http: HttpClient, public user: UserData) {}
 
-  load(): any {
+  load() {
     if (this.data) {
       return of(this.data);
     } else {
-      return this.http.get('assets/data/data.json').pipe(map(this.processData, this));
+      return this.http.get<IDataJson>('assets/data/data.json').pipe(map(this.processData, this));
     }
   }
 
-  processData(data: any) {
+  processData(data: IDataJson) {
     // just some good 'ol JS fun with objects and arrays
     // build up the data by linking speakers to sessions
     this.data = data;
 
     // loop through each day in the schedule
-    this.data.schedule.forEach((day: any) => {
+    this.data.schedule.forEach((day: ISchedule) => {
       // loop through each timeline group in the day
-      day.groups.forEach((group: any) => {
+      day.groups.forEach(group => {
         // loop through each session in the timeline group
-        group.sessions.forEach((session: any) => {
+        group.sessions.forEach((session: ISession) => {
           session.speakers = [];
           if (session.speakerNames) {
-            session.speakerNames.forEach((speakerName: any) => {
+            session.speakerNames.forEach((speakerName: string) => {
               const speaker = this.data.speakers.find((s: any) => s.name === speakerName);
               if (speaker) {
                 session.speakers.push(speaker);

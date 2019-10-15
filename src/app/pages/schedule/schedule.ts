@@ -4,6 +4,7 @@ import { AlertController, IonList, LoadingController, Config } from '@ionic/angu
 
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
+import { IGroups } from '../../interfaces/data.json';
 
 @Component({
   selector: 'page-schedule',
@@ -20,7 +21,7 @@ export class SchedulePage implements OnInit {
   segment = 'all';
   excludeTracks: any = [];
   shownSessions: any = [];
-  groups: any = [];
+  groups: IGroups[] = [];
 
   constructor(
     public alertCtrl: AlertController,
@@ -46,7 +47,6 @@ export class SchedulePage implements OnInit {
     this.confData
       .getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment)
       .subscribe((data: any) => {
-        console.log(data);
         this.shownSessions = data.shownSessions;
         this.groups = data.groups;
       });

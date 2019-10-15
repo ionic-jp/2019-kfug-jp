@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ConferenceData } from '../../providers/conference-data';
 import { ActivatedRoute } from '@angular/router';
 import { UserData } from '../../providers/user-data';
+import { ISession } from '../../interfaces/data.json';
 
 @Component({
   selector: 'page-session-detail',
@@ -10,14 +11,14 @@ import { UserData } from '../../providers/user-data';
   templateUrl: 'session-detail.html',
 })
 export class SessionDetailPage {
-  session: any;
+  session: ISession;
   isFavorite = false;
   defaultHref = '';
 
   constructor(private dataProvider: ConferenceData, private userProvider: UserData, private route: ActivatedRoute) {}
 
   ionViewWillEnter() {
-    this.dataProvider.load().subscribe((data: any) => {
+    this.dataProvider.load().subscribe(data => {
       if (data && data.schedule && data.schedule[0] && data.schedule[0].groups) {
         const sessionId = this.route.snapshot.paramMap.get('sessionId');
         for (const group of data.schedule[0].groups) {
