@@ -1,7 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+      <ion-back-button [defaultHref]="defaultHref" *ngIf="!isModal"></ion-back-button>
+      <ion-button (click)="dismissModal()" *ngIf="isModal"
+        ><ion-icon slot="icon-only" name="close"></ion-icon
+      ></ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-button (click)="toggleFavorite()" color="primary">
@@ -31,6 +34,8 @@
       <ion-item lines="none">
         <p class="content">{{session.description}}</p>
       </ion-item>
+    </ion-list>
+    <ion-list *ngIf="!isModal">
       <ion-item-divider>
         <ion-label>スピーカー</ion-label>
       </ion-item-divider>
@@ -39,6 +44,7 @@
         button="true"
         lines="none"
         *ngFor="let speaker of session.speakers; let i = index;"
+        (click)="openSpeakerModal()"
       >
         <ion-avatar slot="start">
           <img [src]="'assets/img/speakers/' + speaker.image" [alt]="speaker.name + ' profile picture'" />

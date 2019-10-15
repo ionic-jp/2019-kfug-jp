@@ -1,7 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/app/speakers"></ion-back-button>
+      <ion-back-button defaultHref="/app/speakers" *ngIf="!isModal"></ion-back-button>
+      <ion-button (click)="dismissModal()" *ngIf="isModal"
+        ><ion-icon slot="icon-only" name="close"></ion-icon
+      ></ion-button>
     </ion-buttons>
     <ion-title></ion-title>
   </ion-toolbar>
@@ -45,11 +48,16 @@
     </section>
   </header>
   <p class="content ion-padding-start ion-padding-end">{{speaker?.company}}<br />{{speaker?.detail}}</p>
-  <ion-list *ngIf="speaker">
+  <ion-list *ngIf="speaker && !isModal">
     <ion-item-divider>
       <ion-label>セッション</ion-label>
     </ion-item-divider>
-    <ion-item style="--padding-top: 8px; --padding-bottom: 8px;" button="true" lines="none">
+    <ion-item
+      style="--padding-top: 8px; --padding-bottom: 8px;"
+      button="true"
+      lines="none"
+      (click)="openSessionModal()"
+    >
       <ion-chip [class]="'type-' + speaker.hall.slice(0, 1) | lowercase" slot="start">{{speaker.hall}}</ion-chip>
       <ion-label class="ion-wrap ion-text-wrap">{{speaker.session.title}}</ion-label>
     </ion-item>

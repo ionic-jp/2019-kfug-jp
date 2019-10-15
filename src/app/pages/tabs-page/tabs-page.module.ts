@@ -8,8 +8,7 @@ import { TabsPageRoutingModule } from './tabs-page-routing.module';
 
 import { SettingsModule } from '../settings/settings.module';
 import { CommunityModule } from '../community/community.module';
-import { SessionDetailModule } from '../session-detail/session-detail.module';
-import { SpeakerDetailModule } from '../speaker-detail/speaker-detail.module';
+import { ModalModule } from '../modal/modal.module';
 import { SpeakerListModule } from '../speaker-list/speaker-list.module';
 import { SchedulePage } from '../schedule/schedule';
 
@@ -20,8 +19,7 @@ import { SchedulePage } from '../schedule/schedule';
     FormsModule,
     IonicModule,
     CommunityModule,
-    SessionDetailModule,
-    SpeakerDetailModule,
+    ModalModule,
     SpeakerListModule,
     TabsPageRoutingModule,
   ],
