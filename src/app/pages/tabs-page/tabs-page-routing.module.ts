@@ -36,11 +36,11 @@ const routes: Routes = [
         ],
       },
       {
-        path: 'community',
+        path: 'timeline',
         children: [
           {
             path: '',
-            loadChildren: () => import('../community/community.module').then(m => m.CommunityModule),
+            loadChildren: () => import('../timeline/timeline.module').then(m => m.TimelinePageModule),
           },
         ],
       },

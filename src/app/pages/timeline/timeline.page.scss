@@ -1,0 +1,23 @@
+.twitter-guide-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 320px;
+  height: 240px;
+  background: var(--ion-color-primary);
+  border-radius: 8px;
+  color: var(--ion-color-light);
+  text-align: center;
+}
+
+.skeleton-avatar {
+  position:relative;
+  top: 4px;
+  height: 50px;
+  width: 50px;
+  background: rgba(var(--ion-color-medium-rgb), 0.2);
+}

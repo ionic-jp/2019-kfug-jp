@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>タイムライン</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scrollY="false" style="position: relative;">
+  <ion-list>
+    <ion-item lines="full" *ngFor="let i of items">
+      <ion-avatar slot="start" class="ion-align-self-start skeleton-avatar"></ion-avatar>
+      <section style="width: 100%; padding: 8px 0">
+        <ion-skeleton-text animated="true" style="height: 0.9rem; width: 120px;"></ion-skeleton-text>
+        <div style="height: 4px"></div>
+        <ion-skeleton-text style="height: 0.9rem; width: 80%"></ion-skeleton-text>
+        <ion-skeleton-text style="height: 0.9rem;"></ion-skeleton-text>
+        <ion-skeleton-text style="height: 0.9rem; width: 60%"></ion-skeleton-text>
+      </section>
+    </ion-item>
+  </ion-list>
+
+  <section class="twitter-guide-modal ion-padding">
+    <h2>#frontkansai</h2>
+    <p style="padding-top: 16px">セッション情報やカンファレンスの様子をみんなでシェアしよう！</p>
+    <ion-button
+      fill="outline"
+      color="light"
+      href="https://twitter.com/search?q=%23frontkansai&src=hashtag_click"
+      target="_blank"
+    >
+      <ion-icon slot="start" name="logo-twitter"></ion-icon>Twitterをみる</ion-button
+    >
+  </section>
+</ion-content>
