@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
       icon: 'contacts',
     },
     {
-      title: 'コミュニティ',
+      title: 'スポンサー',
       url: '/app/community',
       icon: 'beer',
     },
