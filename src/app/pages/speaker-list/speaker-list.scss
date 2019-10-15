@@ -4,9 +4,15 @@
 
 .speaker-card {
   display: flex;
-  height: 100%;
   flex-direction: column;
 }
+
+@media screen and (min-width: 768px) {
+  .speaker-card {
+    height: 100%;
+  }
+}
+
 
 .speaker-card ion-card-header {
   padding: 0;
