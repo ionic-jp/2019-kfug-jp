@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs-page';
 import { SchedulePage } from '../schedule/schedule';
+import { SessionDetailPage } from '../session-detail/session-detail';
 
 const routes: Routes = [
   {
@@ -17,26 +18,13 @@ const routes: Routes = [
           },
           {
             path: 'session/:sessionId',
-            loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule),
+            component: SessionDetailPage,
           },
         ],
       },
       {
         path: 'speakers',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../speaker-list/speaker-list.module').then(m => m.SpeakerListModule),
-          },
-          {
-            path: 'session/:sessionId',
-            loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule),
-          },
-          {
-            path: 'speaker-details/:speakerId',
-            loadChildren: () => import('../speaker-detail/speaker-detail.module').then(m => m.SpeakerDetailModule),
-          },
-        ],
+        loadChildren: () => import('../speaker-list/speaker-list.module').then(m => m.SpeakerListModule),
       },
       {
         path: 'settings',
@@ -55,6 +43,11 @@ const routes: Routes = [
             loadChildren: () => import('../community/community.module').then(m => m.CommunityModule),
           },
         ],
+      },
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'schedule',
       },
     ],
   },
