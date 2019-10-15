@@ -4,7 +4,7 @@
       <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button (click)="toggleFavorite()">
+      <ion-button (click)="toggleFavorite()" color="primary">
         <ion-icon *ngIf="!isFavorite" slot="icon-only" name="star-outline"></ion-icon>
         <ion-icon *ngIf="isFavorite" slot="icon-only" name="star"></ion-icon>
       </ion-button>
@@ -16,7 +16,7 @@
   <div *ngIf="session">
     <ion-list>
       <ion-item lines="none" style="padding-top: 8px">
-        <ion-chip [class]="session.tracks[0] | lowercase" slot="start">
+        <ion-chip [class]="session.tracks[0]" slot="start">
           <ion-icon name="pin" color="white"></ion-icon>
           <ion-label>{{session.location}}</ion-label>
         </ion-chip>

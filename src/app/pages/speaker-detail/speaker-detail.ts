@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ConferenceData } from '../../providers/conference-data';
 import { ISpeaker } from '../../interfaces/data.json';
@@ -6,7 +6,7 @@ import { ISpeaker } from '../../interfaces/data.json';
 @Component({
   selector: 'page-speaker-detail',
   templateUrl: 'speaker-detail.html',
-  styleUrls: ['./speaker-detail.scss', '../schedule/schedule.scss'],
+  styleUrls: ['./speaker-detail.scss'],
 })
 export class SpeakerDetailPage {
   speaker: ISpeaker;

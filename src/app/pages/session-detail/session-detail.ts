@@ -7,7 +7,7 @@ import { ISession } from '../../interfaces/data.json';
 
 @Component({
   selector: 'page-session-detail',
-  styleUrls: ['./session-detail.scss', '../schedule/schedule.scss'],
+  styleUrls: ['./session-detail.scss'],
   templateUrl: 'session-detail.html',
 })
 export class SessionDetailPage {
@@ -18,7 +18,7 @@ export class SessionDetailPage {
   constructor(private dataProvider: ConferenceData, private userProvider: UserData, private route: ActivatedRoute) {}
 
   ionViewWillEnter() {
-    this.dataProvider.load().subscribe(data => {
+    this.dataProvider.load().subscribe(async data => {
       if (data && data.schedule && data.schedule[0] && data.schedule[0].groups) {
         const sessionId = this.route.snapshot.paramMap.get('sessionId');
         for (const group of data.schedule[0].groups) {
@@ -27,7 +27,7 @@ export class SessionDetailPage {
               if (session && session.id === sessionId) {
                 this.session = session;
 
-                this.isFavorite = this.userProvider.hasFavorite(this.session.name);
+                this.isFavorite = this.userProvider.hasFavorite(this.session.id);
 
                 break;
               }
@@ -47,11 +47,11 @@ export class SessionDetailPage {
   }
 
   toggleFavorite() {
-    if (this.userProvider.hasFavorite(this.session.name)) {
-      this.userProvider.removeFavorite(this.session.name);
+    if (this.userProvider.hasFavorite(this.session.id)) {
+      this.userProvider.removeFavorite(this.session.id);
       this.isFavorite = false;
     } else {
-      this.userProvider.addFavorite(this.session.name);
+      this.userProvider.addFavorite(this.session.id);
       this.isFavorite = true;
     }
   }

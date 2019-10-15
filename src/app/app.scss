@@ -1,3 +1,7 @@
+ion-title[size=large] {
+  min-height: 41px;
+}
+
 p.content {
   font-size: 1.1rem;
   line-height: 1.8rem;
@@ -5,4 +9,18 @@ p.content {
   color: var(--ion-color-dark-tint);
   margin: 16px auto;
   max-width: 600px;
+}
+
+$categories: (
+  type-a: #f29a8b,
+  type-b: #64b297,
+  type-c: #56b6db
+);
+
+@each $track, $value in map-remove($categories) {
+  ion-chip.#{$track} {
+    background-color: $value;
+    color: #ffffff;
+    font-weight: bold;
+  }
 }

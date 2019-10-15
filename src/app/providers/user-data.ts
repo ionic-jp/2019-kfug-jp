@@ -6,22 +6,20 @@ import { Storage } from '@ionic/storage';
   providedIn: 'root',
 })
 export class UserData {
-  _favorites: string[] = [];
-
   constructor(public events: Events, public storage: Storage) {}
 
   hasFavorite(sessionName: string): boolean {
-    return this._favorites.indexOf(sessionName) > -1;
+    if (!sessionName) {
+      return false;
+    }
+    return sessionName in localStorage;
   }
 
   addFavorite(sessionName: string): void {
-    this._favorites.push(sessionName);
+    localStorage[sessionName] = true;
   }
 
   removeFavorite(sessionName: string): void {
-    const index = this._favorites.indexOf(sessionName);
-    if (index > -1) {
-      this._favorites.splice(index, 1);
-    }
+    localStorage.removeItem(sessionName);
   }
 }

@@ -1,20 +1,8 @@
-$categories: (
-  type-a: #f29a8b,
-  type-b: #64b297,
-  type-c: #56b6db
-);
+.session-item {
+  font-size: 16px;
+  padding: 4px 0;
+}
 
-
-
-@each $track, $value in map-remove($categories) {
-  //ion-item-sliding[track='#{$track}'] ion-label {
-  //  border-left: 2px solid $value;
-  //  padding-left: 10px;
-  //}
-
-  ion-chip.#{$track} {
-    background-color: $value;
-    color: #ffffff;
-    font-weight: bold;
-  }
+ion-item.color-primary {
+  --background: rgba(var(--ion-color-primary-rgb), 0.1);
 }

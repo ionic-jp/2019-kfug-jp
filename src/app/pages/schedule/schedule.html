@@ -6,7 +6,6 @@
     <ion-searchbar
       [(ngModel)]="queryText"
       (ionChange)="updateSchedule()"
-      placeholder="絞り込み"
       animated="true"
       showCancelButton
     ></ion-searchbar>
@@ -17,21 +16,20 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-buttons collapse="true">
-        <ion-title size="large" style="min-height: 41px;">スケジュール</ion-title>
+        <ion-title size="large">スケジュール</ion-title>
       </ion-buttons>
     </ion-toolbar>
     <ion-toolbar>
       <ion-searchbar
         [(ngModel)]="queryText"
         (ionChange)="updateSchedule()"
-        placeholder="絞り込み"
         animated="true"
         showCancelButton
       ></ion-searchbar>
     </ion-toolbar>
   </ion-header>
 
-  <ion-list #scheduleList [hidden]="shownSessions === 0">
+  <ion-list #scheduleList *ngIf="shownSessions">
     <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
       <ion-item-divider sticky>
         <ion-label>{{group.time}}</ion-label>
@@ -40,55 +38,30 @@
       <ion-item-sliding
         *ngFor="let session of group.sessions; let i = index"
         #slidingItem
-        [attr.track]="session.tracks[0] | lowercase"
+        [attr.track]="session.tracks[0]"
         [hidden]="session.hide"
       >
         <ion-item
-          routerLink="/app/schedule/session/{{session.id}}"
           [attr.lines]="group.sessions.length == (i + 1) ? 'full' : null"
+          [class.color-primary]="session.isFavorite"
+          routerLink="/app/schedule/session/{{session.id}}"
         >
-          <ion-label class="ion-wrap ion-text-wrap" style="font-size: 16px; padding: 4px 0;"
-            >{{session.name}}</ion-label
-          >
-          <ion-chip [class]="session.tracks[0] | lowercase" slot="start">{{session.location}}</ion-chip>
+          <ion-chip [class]="session.tracks[0]" slot="start">{{session.location}}</ion-chip>
+          <ion-label class="ion-wrap ion-text-wrap session-item">
+            {{session.name}}
+          </ion-label>
         </ion-item>
         <ion-item-options>
-          <ion-item-option color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
-            Favorite
-          </ion-item-option>
-          <ion-item-option
-            color="danger"
-            (click)="removeFavorite(slidingItem, session, 'Remove Favorite')"
-            *ngIf="segment === 'favorites'"
-          >
-            Remove
+          <ion-item-option color="light" (click)="addFavorite(slidingItem, session)">
+            <ion-icon slot="icon-only" name="star-outline" color="primary" *ngIf="!session.isFavorite"></ion-icon>
+            <ion-icon slot="icon-only" name="star" color="primary" *ngIf="session.isFavorite"></ion-icon>
           </ion-item-option>
         </ion-item-options>
       </ion-item-sliding>
     </ion-item-group>
   </ion-list>
 
-  <ion-list-header [hidden]="shownSessions > 0">
+  <ion-list-header *ngIf="shownSessions === 0">
     No Sessions Found
   </ion-list-header>
-
-  <ion-fab slot="fixed" vertical="bottom" horizontal="end" #fab>
-    <ion-fab-button>
-      <ion-icon name="share"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button color="vimeo" (click)="openSocial('Vimeo', fab)">
-        <ion-icon name="logo-vimeo"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button color="google" (click)="openSocial('Google+', fab)">
-        <ion-icon name="logo-googleplus"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button color="twitter" (click)="openSocial('Twitter', fab)">
-        <ion-icon name="logo-twitter"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button color="facebook" (click)="openSocial('Facebook', fab)">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
 </ion-content>

@@ -5,6 +5,7 @@ export interface IDataJson {
 
 export interface ISchedule {
   date: string;
+  shownSessions?: number;
   groups: IGroups[];
 }
 
@@ -27,6 +28,7 @@ export interface ISession {
   id: string;
   tracks: string[];
   hide?: boolean;
+  isFavorite?: boolean | null;
 }
 
 export interface ISpeaker {

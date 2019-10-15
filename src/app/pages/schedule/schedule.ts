@@ -4,7 +4,7 @@ import { AlertController, IonList, LoadingController, Config } from '@ionic/angu
 
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
-import { IGroups } from '../../interfaces/data.json';
+import { IGroups, ISession } from '../../interfaces/data.json';
 
 @Component({
   selector: 'page-schedule',
@@ -12,21 +12,18 @@ import { IGroups } from '../../interfaces/data.json';
   styleUrls: ['./schedule.scss'],
 })
 export class SchedulePage implements OnInit {
-  // Gets a reference to the list element
   @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
 
   ios: boolean;
   dayIndex = 0;
   queryText = '';
   segment = 'all';
-  excludeTracks: any = [];
-  shownSessions: any = [];
+  shownSessions: number;
   groups: IGroups[] = [];
 
   constructor(
     public alertCtrl: AlertController,
     public confData: ConferenceData,
-    public loadingCtrl: LoadingController,
     public router: Router,
     public user: UserData,
     public config: Config,
@@ -34,88 +31,69 @@ export class SchedulePage implements OnInit {
 
   ngOnInit() {
     this.updateSchedule();
-
     this.ios = this.config.get('mode') === 'ios';
   }
 
   updateSchedule() {
-    // Close any open sliding items when the schedule updates
     if (this.scheduleList) {
       this.scheduleList.closeSlidingItems();
     }
 
-    this.confData
-      .getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment)
-      .subscribe((data: any) => {
-        this.shownSessions = data.shownSessions;
-        this.groups = data.groups;
-      });
+    this.confData.getTimeline(this.dayIndex, this.queryText, this.segment).subscribe(data => {
+      this.shownSessions = data.shownSessions;
+      this.groups = data.groups;
+    });
   }
 
-  async addFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: any) {
-    if (this.user.hasFavorite(sessionData.name)) {
-      // woops, they already favorited it! What shall we do!?
-      // prompt them to remove it
-      this.removeFavorite(slidingItem, sessionData, 'Favorite already added');
+  async addFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: ISession) {
+    if (this.user.hasFavorite(sessionData.id)) {
+      this.removeFavorite(slidingItem, sessionData);
     } else {
-      // remember this session as a user favorite
-      this.user.addFavorite(sessionData.name);
-
-      // create an alert instance
       const alert = await this.alertCtrl.create({
-        header: 'Favorite Added',
+        header: 'お気に入り追加',
+        message: 'あとから見返す時のためにお気に入りに追加しますか？お気に入り情報はこのデバイスに保存されます。',
         buttons: [
           {
-            text: 'OK',
+            text: 'キャンセル',
             handler: () => {
-              // close the sliding item
+              slidingItem.close();
+            },
+          },
+          {
+            text: '追加する',
+            handler: () => {
+              this.user.addFavorite(sessionData.id);
+              this.updateSchedule();
               slidingItem.close();
             },
           },
         ],
       });
-      // now present the alert on top of all other content
       await alert.present();
     }
   }
 
-  async removeFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: any, title: string) {
+  async removeFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: any) {
     const alert = await this.alertCtrl.create({
-      header: title,
-      message: 'Would you like to remove this session from your favorites?',
+      header: 'お気に入り削除',
+      message: 'お気に入りから削除しますか？削除しても、もう一度クリックするとお気に入りに追加することができます。',
       buttons: [
         {
-          text: 'Cancel',
+          text: 'キャンセル',
           handler: () => {
-            // they clicked the cancel button, do not remove the session
-            // close the sliding item and hide the option buttons
             slidingItem.close();
           },
         },
         {
-          text: 'Remove',
+          text: '削除する',
           handler: () => {
-            // they want to remove this session from their favorites
-            this.user.removeFavorite(sessionData.name);
+            this.user.removeFavorite(sessionData.id);
             this.updateSchedule();
-
-            // close the sliding item and hide the option buttons
             slidingItem.close();
           },
         },
       ],
     });
-    // now present the alert on top of all other content
     await alert.present();
-  }
-
-  async openSocial(network: string, fab: HTMLIonFabElement) {
-    const loading = await this.loadingCtrl.create({
-      message: `Posting to ${network}`,
-      duration: Math.random() * 1000 + 500,
-    });
-    await loading.present();
-    await loading.onWillDismiss();
-    fab.close();
   }
 }

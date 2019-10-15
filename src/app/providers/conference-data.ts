@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { IDataJson } from '../interfaces/data.json';
+import { IDataJson, IGroups, ISession } from '../interfaces/data.json';
 
 import { UserData } from './user-data';
 
@@ -27,24 +27,22 @@ export class ConferenceData {
     return this.data;
   }
 
-  getTimeline(dayIndex: number, queryText = '', excludeTracks: any[] = [], segment = 'all') {
+  getTimeline(dayIndex: number, queryText = '', segment = 'all') {
     return this.load().pipe(
-      map((data: any) => {
+      map((data: IDataJson) => {
         const day = data.schedule[dayIndex];
         day.shownSessions = 0;
 
         queryText = queryText.toLowerCase().replace(/,|\.|-/g, ' ');
         const queryWords = queryText.split(' ').filter(w => !!w.trim().length);
 
-        day.groups.forEach((group: any) => {
+        day.groups.forEach((group: IGroups) => {
           group.hide = true;
 
-          group.sessions.forEach((session: any) => {
-            // check if this session should show or not
-            this.filterSession(session, queryWords, excludeTracks, segment);
-
+          group.sessions.forEach((session: ISession) => {
+            this.filterSession(session, queryWords, segment);
+            session.isFavorite = this.user.hasFavorite(session.id);
             if (!session.hide) {
-              // if this session is not hidden then this group should show
               group.hide = false;
               day.shownSessions++;
             }
@@ -56,7 +54,7 @@ export class ConferenceData {
     );
   }
 
-  filterSession(session: any, queryWords: string[], excludeTracks: any[], segment: string) {
+  filterSession(session: ISession, queryWords: string[], segment: string) {
     let matchesQueryText = false;
     if (queryWords.length) {
       // of any query word is in the session name than it passes the query test
@@ -70,15 +68,6 @@ export class ConferenceData {
       matchesQueryText = true;
     }
 
-    // if any of the sessions tracks are not in the
-    // exclude tracks then this session passes the track test
-    let matchesTracks = false;
-    session.tracks.forEach((trackName: string) => {
-      if (excludeTracks.indexOf(trackName) === -1) {
-        matchesTracks = true;
-      }
-    });
-
     // if the segment is 'favorites', but session is not a user favorite
     // then this session does not pass the segment test
     let matchesSegment = false;
@@ -91,7 +80,7 @@ export class ConferenceData {
     }
 
     // all tests must be true if it should not be hidden
-    session.hide = !(matchesQueryText && matchesTracks && matchesSegment);
+    session.hide = !(matchesQueryText && matchesSegment);
   }
 
   getSpeakers() {
