@@ -2,6 +2,12 @@ ion-title[size=large] {
   min-height: 41px;
 }
 
+@media screen and (min-width: 992px) {
+  ion-tab-bar {
+    display: none;
+  }
+}
+
 p.content {
   font-size: 1.1rem;
   line-height: 1.8rem;
