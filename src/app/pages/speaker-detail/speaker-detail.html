@@ -3,25 +3,55 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/app/speakers"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{speaker?.name}}</ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding speaker-detail">
-  <div *ngIf="speaker" class="ion-text-center">
-    <img [src]="speaker.profilePic" [alt]="speaker.name" />
-    <br />
-
-    <ion-button fill="clear" size="small" color="twitter">
-      <ion-icon name="logo-twitter" slot="icon-only"></ion-icon>
-    </ion-button>
-    <ion-button fill="clear" size="small" color="github">
-      <ion-icon name="logo-github" slot="icon-only"></ion-icon>
-    </ion-button>
-    <ion-button fill="clear" size="small" color="instagram">
-      <ion-icon name="logo-instagram" slot="icon-only"></ion-icon>
-    </ion-button>
-  </div>
-
-  <p>{{speaker?.about}}</p>
+<ion-content class="speaker-detail">
+  <header *ngIf="speaker" class="ion-text-center ion-margin-top">
+    <img [src]="'assets/img/speakers/' + speaker.image" [alt]="speaker.name" />
+    <h3>{{speaker.name}}</h3>
+    <section>
+      <ion-button
+        fill="clear"
+        size="small"
+        color="twitter"
+        [disabled]="!speaker.twitter"
+        [href]="speaker.titter"
+        target="_blank"
+      >
+        <ion-icon name="logo-twitter" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button
+        fill="clear"
+        size="small"
+        color="facebook"
+        [disabled]="!speaker.facebook"
+        [href]="speaker.facebook"
+        target="_blank"
+      >
+        <ion-icon name="logo-facebook" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button
+        fill="clear"
+        size="small"
+        color="link"
+        [disabled]="!speaker.link"
+        [href]="speaker.link"
+        target="_blank"
+      >
+        <ion-icon name="link" slot="icon-only"></ion-icon>
+      </ion-button>
+    </section>
+  </header>
+  <p class="content ion-padding-start ion-padding-end">{{speaker?.detail}}</p>
+  <ion-list *ngIf="speaker">
+    <ion-item-divider>
+      <ion-label>セッション</ion-label>
+    </ion-item-divider>
+    <ion-item style="--padding-top: 8px; --padding-bottom: 8px;" button="true" lines="none">
+      <ion-chip [class]="'type-' + speaker.hall.slice(0, 1) | lowercase" slot="start">{{speaker.hall}}</ion-chip>
+      <ion-label class="ion-wrap ion-text-wrap">{{speaker.session.title}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

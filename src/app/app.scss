@@ -2,4 +2,7 @@ p.content {
   font-size: 1.1rem;
   line-height: 1.8rem;
   white-space: pre-wrap;
+  color: var(--ion-color-dark-tint);
+  margin: 16px auto;
+  max-width: 600px;
 }

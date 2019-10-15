@@ -5,7 +5,7 @@ import { ConferenceData } from '../../providers/conference-data';
 @Component({
   selector: 'page-speaker-detail',
   templateUrl: 'speaker-detail.html',
-  styleUrls: ['./speaker-detail.scss'],
+  styleUrls: ['./speaker-detail.scss', '../schedule/schedule.scss'],
 })
 export class SpeakerDetailPage {
   speaker: any;
@@ -17,7 +17,7 @@ export class SpeakerDetailPage {
       const speakerId = this.route.snapshot.paramMap.get('speakerId');
       if (data && data.speakers) {
         for (const speaker of data.speakers) {
-          if (speaker && speaker.id === speakerId) {
+          if (speaker && speaker.key === speakerId) {
             this.speaker = speaker;
             break;
           }

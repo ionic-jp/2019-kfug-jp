@@ -8,7 +8,7 @@
   <ion-grid fixed>
     <ion-row class="ion-align-items-stretch">
       <ion-col size="12" size-md="6" *ngFor="let speaker of speakers">
-        <ion-card class="speaker-card" routerLink="/app/speakers/speaker-details/{{speaker.id}}">
+        <ion-card class="speaker-card" routerLink="/app/speakers/speaker-details/{{speaker.key}}">
           <ion-card-header class="ion-text-center" style="border-bottom: 1px solid #f0f0f0">
             <ion-item lines="none" class="ion-no-padding ion-padding-top ion-padding-bottom">
               <ion-avatar slot="start" style="width: 48px; height: 48px">
@@ -22,8 +22,8 @@
           </ion-card-header>
 
           <ion-card-content>
-            <ion-text class="ion-padding" style="font-size: 0.9rem; display: block;"
-              >{{speaker.detail.slice(0, 80)}}<span *ngIf="speaker.detail.length > 80">...</span></ion-text
+            <ion-text class="ion-padding" style="font-size: 1rem; display: block;"
+              >{{speaker.detail.slice(0, 60)}}<span *ngIf="speaker.detail.length > 60">...</span></ion-text
             >
           </ion-card-content>
         </ion-card>
