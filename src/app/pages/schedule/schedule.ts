@@ -1,6 +1,6 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController, IonList, LoadingController, Config } from '@ionic/angular';
+import { AlertController, IonList, Config } from '@ionic/angular';
 
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
@@ -11,7 +11,7 @@ import { IGroups, ISession } from '../../interfaces/data.json';
   templateUrl: 'schedule.html',
   styleUrls: ['./schedule.scss'],
 })
-export class SchedulePage implements OnInit {
+export class SchedulePage {
   @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
 
   ios: boolean;
@@ -29,7 +29,7 @@ export class SchedulePage implements OnInit {
     public config: Config,
   ) {}
 
-  ngOnInit() {
+  ionViewWillEnter() {
     this.updateSchedule();
     this.ios = this.config.get('mode') === 'ios';
   }
