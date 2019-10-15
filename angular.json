@@ -9,6 +9,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "showCircularDependencies": false,
             "progress": false,
             "outputPath": "www",
             "index": "src/index.html",
