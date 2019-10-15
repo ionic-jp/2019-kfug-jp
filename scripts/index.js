@@ -60,9 +60,9 @@ const sessions = groups.map(group => {
             speakerNames: [s.name],
             timeStart: group.time,
             timeEnd: group.end,
-            location: "A1",
+            location: s.hall,
             id: s.key,
-            tracks: ["engineer"],
+            tracks: ['type-' + s.hall.slice(0, 1).toLowerCase()],
           };
         })
         .find(s => s.id === key)

@@ -1,7 +1,7 @@
 {
   "schedule": [
     {
-      "date": "first",
+      "date": "firstDay",
       "groups": [
         {
           "time": "11:00",
@@ -14,10 +14,10 @@
               ],
               "timeStart": "11:00",
               "timeEnd": "11:40",
-              "location": "A1",
+              "location": "A-1",
               "id": "onoueyosuke",
               "tracks": [
-                "engineer"
+                "type-a"
               ]
             },
             {
@@ -28,10 +28,10 @@
               ],
               "timeStart": "11:00",
               "timeEnd": "11:40",
-              "location": "A1",
+              "location": "B-1",
               "id": "yamashitakazuki",
               "tracks": [
-                "engineer"
+                "type-b"
               ]
             },
             {
@@ -42,10 +42,10 @@
               ],
               "timeStart": "11:00",
               "timeEnd": "11:40",
-              "location": "A1",
+              "location": "C-1",
               "id": "taguchiwataru",
               "tracks": [
-                "engineer"
+                "type-c"
               ]
             }
           ]
@@ -61,10 +61,10 @@
               ],
               "timeStart": "11:45",
               "timeEnd": "12:25",
-              "location": "A1",
+              "location": "A-2",
               "id": "okunokentaro",
               "tracks": [
-                "engineer"
+                "type-a"
               ]
             },
             {
@@ -75,10 +75,10 @@
               ],
               "timeStart": "11:45",
               "timeEnd": "12:25",
-              "location": "A1",
+              "location": "B-2",
               "id": "sakakibaramasahiko",
               "tracks": [
-                "engineer"
+                "type-b"
               ]
             },
             {
@@ -89,10 +89,10 @@
               ],
               "timeStart": "11:45",
               "timeEnd": "12:25",
-              "location": "A1",
+              "location": "C-2",
               "id": "kawamatayuga",
               "tracks": [
-                "engineer"
+                "type-c"
               ]
             }
           ]
@@ -108,10 +108,10 @@
               ],
               "timeStart": "13:00",
               "timeEnd": "13:40",
-              "location": "A1",
+              "location": "A-3",
               "id": "matsushitaeri",
               "tracks": [
-                "engineer"
+                "type-a"
               ]
             },
             {
@@ -122,10 +122,10 @@
               ],
               "timeStart": "13:00",
               "timeEnd": "13:40",
-              "location": "A1",
+              "location": "B-3",
               "id": "conti",
               "tracks": [
-                "engineer"
+                "type-b"
               ]
             },
             {
@@ -136,10 +136,10 @@
               ],
               "timeStart": "13:00",
               "timeEnd": "13:40",
-              "location": "A1",
+              "location": "C-3",
               "id": "kojimadaiki",
               "tracks": [
-                "engineer"
+                "type-c"
               ]
             }
           ]
@@ -155,10 +155,10 @@
               ],
               "timeStart": "13:45",
               "timeEnd": "14:25",
-              "location": "A1",
+              "location": "A-4",
               "id": "kirillvasiltsov",
               "tracks": [
-                "engineer"
+                "type-a"
               ]
             },
             {
@@ -169,10 +169,10 @@
               ],
               "timeStart": "13:45",
               "timeEnd": "14:25",
-              "location": "A1",
+              "location": "C-4",
               "id": "suzukitakayuki",
               "tracks": [
-                "engineer"
+                "type-c"
               ]
             }
           ]
@@ -188,10 +188,10 @@
               ],
               "timeStart": "14:30",
               "timeEnd": "15:10",
-              "location": "A1",
+              "location": "B-5",
               "id": "jimboyoshihide",
               "tracks": [
-                "engineer"
+                "type-b"
               ]
             }
           ]
@@ -207,10 +207,10 @@
               ],
               "timeStart": "15:15",
               "timeEnd": "15:55",
-              "location": "A1",
+              "location": "A-6",
               "id": "hanatanitakuma",
               "tracks": [
-                "engineer"
+                "type-a"
               ]
             },
             {
@@ -221,10 +221,10 @@
               ],
               "timeStart": "15:15",
               "timeEnd": "15:55",
-              "location": "A1",
+              "location": "B-6",
               "id": "okitakanori",
               "tracks": [
-                "engineer"
+                "type-b"
               ]
             },
             {
@@ -235,10 +235,10 @@
               ],
               "timeStart": "15:15",
               "timeEnd": "15:55",
-              "location": "A1",
+              "location": "C-6",
               "id": "hamadamasanari",
               "tracks": [
-                "engineer"
+                "type-c"
               ]
             }
           ]
@@ -254,10 +254,10 @@
               ],
               "timeStart": "16:00",
               "timeEnd": "16:40",
-              "location": "A1",
+              "location": "A-7",
               "id": "hiranomasashi",
               "tracks": [
-                "engineer"
+                "type-a"
               ]
             },
             {
@@ -268,10 +268,10 @@
               ],
               "timeStart": "16:00",
               "timeEnd": "16:40",
-              "location": "A1",
+              "location": "B-7",
               "id": "onishiyuji",
               "tracks": [
-                "engineer"
+                "type-b"
               ]
             },
             {
@@ -282,10 +282,10 @@
               ],
               "timeStart": "16:00",
               "timeEnd": "16:40",
-              "location": "A1",
+              "location": "C-7",
               "id": "mikakane",
               "tracks": [
-                "engineer"
+                "type-c"
               ]
             }
           ]

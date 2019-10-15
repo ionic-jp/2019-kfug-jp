@@ -1,19 +1,20 @@
 $categories: (
-  design: #fed035,
-  engineer: #3bc7c4,
-  ionic: var(--ion-color-primary),
-  angular: #ac282b,
-  communication: #8e8d93,
-  tooling: #fe4c52,
-  services: #fd8b2d,
-  workshop: #69bb7b,
-  documentation: #b16be3,
-  navigation: #6600cc
+  type-a: #f29a8b,
+  type-b: #64b297,
+  type-c: #56b6db
 );
 
+
+
 @each $track, $value in map-remove($categories) {
-  ion-item-sliding[track='#{$track}'] ion-label {
-    border-left: 2px solid $value;
-    padding-left: 10px;
+  //ion-item-sliding[track='#{$track}'] ion-label {
+  //  border-left: 2px solid $value;
+  //  padding-left: 10px;
+  //}
+
+  ion-chip.#{$track} {
+    background-color: $value;
+    color: #ffffff;
+    font-weight: bold;
   }
 }
