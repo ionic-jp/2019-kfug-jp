@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Events } from '@ionic/angular';
 
 @Component({
   selector: 'settings',
@@ -8,9 +7,9 @@ import { Events } from '@ionic/angular';
 })
 export class SettingsPage {
   dark = false;
-  constructor(public events: Events) {}
+  constructor() {}
 
   changeTheme() {
-    this.events.publish('theme', this.dark);
+    // this.events.publish('theme', this.dark);
   }
 }

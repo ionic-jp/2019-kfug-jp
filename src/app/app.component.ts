@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { SwUpdate } from '@angular/service-worker';
-import { Events, MenuController, Platform, ToastController } from '@ionic/angular';
+import { MenuController, Platform, ToastController } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
 
 import { UserData } from './providers/user-data';
@@ -38,7 +38,6 @@ export class AppComponent implements OnInit {
   dark = false;
 
   constructor(
-    private events: Events,
     private menu: MenuController,
     private platform: Platform,
     private router: Router,
@@ -54,9 +53,8 @@ export class AppComponent implements OnInit {
     this.swUpdate.available.subscribe(async res => {
       const toast = await this.toastCtrl.create({
         message: '最新版を利用できるようになりました',
-        showCloseButton: true,
         position: 'bottom',
-        closeButtonText: `アップデートする`,
+        buttons: [`アップデートする`],
       });
 
       await toast.present();
@@ -67,7 +65,7 @@ export class AppComponent implements OnInit {
         .then(() => window.location.reload());
     });
 
-    this.events.subscribe('theme', theme => (this.dark = theme));
+    // this.events.subscribe('theme', theme => (this.dark = theme));
   }
 
   initializeApp() {

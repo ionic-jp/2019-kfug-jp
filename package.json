@@ -28,7 +28,7 @@
     "@angular/pwa": "~0.803.6",
     "@angular/router": "8.1.1",
     "@angular/service-worker": "~8.1.1",
-    "@ionic/angular": "^4.11.1",
+    "@ionic/angular": "4.12.0-dev.201910151255.dd0d993",
     "@ionic/storage": "^2.1.3",
     "core-js": "^3.2.1",
     "json-loader": "^0.5.7",

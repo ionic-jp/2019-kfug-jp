@@ -18,12 +18,7 @@
       <ion-title size="large">スケジュール</ion-title>
     </ion-toolbar>
     <ion-toolbar>
-      <ion-searchbar
-        [(ngModel)]="queryText"
-        (ionChange)="updateSchedule()"
-        animated="true"
-        showCancelButton
-      ></ion-searchbar>
+      <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" animated="true"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
 
