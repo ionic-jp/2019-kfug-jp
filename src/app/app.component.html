@@ -14,31 +14,13 @@
             Navigate
           </ion-list-header>
           <ion-menu-toggle autoHide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item
-              [routerLink]="p.url"
-              routerLinkActive="active"
-              routerDirection="root"
-              [attr.lines]="appPages.length == (i + 1) ? 'full' : 'none'"
-            >
+            <ion-item [routerLink]="p.url" routerLinkActive="active" routerDirection="root" lines="none">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
                 {{p.title}}
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
-        </ion-list>
-
-        <ion-list>
-          <ion-list-header>
-            Theme
-          </ion-list-header>
-
-          <ion-item lines="full">
-            <ion-label>
-              ダークテーマ
-            </ion-label>
-            <ion-toggle [(ngModel)]="dark"></ion-toggle>
-          </ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>
