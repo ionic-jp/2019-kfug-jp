@@ -45,7 +45,7 @@ export class SchedulePage implements OnInit {
     });
   }
 
-  async addFavorite(slidingItem: HTMLIonItemSlidingElement, sessionData: ISession) {
+  async addFavorite(slidingItem: HTMLIonItemSlidingElement | any, sessionData: ISession) {
     if (this.user.hasFavorite(sessionData.id)) {
       this.removeFavorite(slidingItem, sessionData);
     } else {

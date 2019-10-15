@@ -16,14 +16,7 @@ export class SpeakerDetailPage {
   ionViewWillEnter() {
     this.dataProvider.load().subscribe(data => {
       const speakerId = this.route.snapshot.paramMap.get('speakerId');
-      if (data && data.speakers) {
-        for (const speaker of data.speakers) {
-          if (speaker && speaker.key === speakerId) {
-            this.speaker = speaker;
-            break;
-          }
-        }
-      }
+      this.speaker = data.speakers.find(speaker => speaker.key === speakerId);
     });
   }
 }

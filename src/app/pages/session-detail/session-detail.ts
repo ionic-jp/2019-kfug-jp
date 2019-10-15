@@ -13,37 +13,21 @@ import { ISession } from '../../interfaces/data.json';
 export class SessionDetailPage {
   session: ISession;
   isFavorite = false;
-  defaultHref = '';
+  defaultHref = `/app/schedule`;
 
   constructor(private dataProvider: ConferenceData, private userProvider: UserData, private route: ActivatedRoute) {}
 
   ionViewWillEnter() {
     this.dataProvider.load().subscribe(async data => {
-      if (data && data.schedule && data.schedule[0] && data.schedule[0].groups) {
-        const sessionId = this.route.snapshot.paramMap.get('sessionId');
-        for (const group of data.schedule[0].groups) {
-          if (group && group.sessions) {
-            for (const session of group.sessions) {
-              if (session && session.id === sessionId) {
-                this.session = session;
-
-                this.isFavorite = this.userProvider.hasFavorite(this.session.id);
-
-                break;
-              }
-            }
-          }
+      const sessionId = this.route.snapshot.paramMap.get('sessionId');
+      for (const group of data.schedule[0].groups) {
+        this.session = group.sessions.find(session => session.id === sessionId);
+        this.isFavorite = this.userProvider.hasFavorite(this.session.id);
+        if (this.session) {
+          break;
         }
       }
     });
-  }
-
-  ionViewDidEnter() {
-    this.defaultHref = `/app/schedule`;
-  }
-
-  sessionClick(item: string) {
-    console.log('Clicked', item);
   }
 
   toggleFavorite() {
@@ -54,9 +38,5 @@ export class SessionDetailPage {
       this.userProvider.addFavorite(this.session.id);
       this.isFavorite = true;
     }
-  }
-
-  shareSession() {
-    console.log('Clicked share session');
   }
 }
