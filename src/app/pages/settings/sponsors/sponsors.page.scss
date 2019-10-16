@@ -1,0 +1,7 @@
+ion-item {
+  --padding-top: 4px;
+}
+
+ion-list ion-item[lines=none] {
+  --padding-bottom: 8px;
+}
