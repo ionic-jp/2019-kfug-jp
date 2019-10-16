@@ -22,6 +22,20 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-list *ngFor="isReady">
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label><ion-skeleton-text animated="true" style="width: 40px"></ion-skeleton-text></ion-label>
+      </ion-item-divider>
+    </ion-item-group>
+    <ion-item *ngFor="let i of [1, 2, 3, 4, 5]">
+      <ion-chip slot="start" style="width: 48px"></ion-chip>
+      <ion-label class="ion-wrap ion-text-wrap session-item">
+        <ion-skeleton-text animated="true" style="width: 320px; height: 1rem"></ion-skeleton-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
   <ion-list #scheduleList *ngIf="shownSessions">
     <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
       <ion-item-divider sticky>

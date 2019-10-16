@@ -12,11 +12,13 @@ import { ISpeaker } from '../../interfaces/data.json';
 })
 export class SpeakerListPage {
   speakers: ISpeaker[] = [];
+  isReady = false;
 
   constructor(public actionSheetCtrl: ActionSheetController, public confData: ConferenceData, public router: Router) {}
 
   ionViewDidEnter() {
     this.confData.getSpeakers().subscribe((speakers: any[]) => {
+      this.isReady = true;
       this.speakers = speakers;
     });
   }

@@ -15,6 +15,7 @@ export class SchedulePage {
   @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
 
   ios: boolean;
+  isReady = false;
   dayIndex = 0;
   queryText = '';
   segment = 'all';
@@ -40,6 +41,7 @@ export class SchedulePage {
     }
 
     this.confData.getTimeline(this.dayIndex, this.queryText, this.segment).subscribe(data => {
+      this.isReady = true;
       this.shownSessions = data.shownSessions;
       this.groups = data.groups;
     });
