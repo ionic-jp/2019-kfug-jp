@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActionSheetController } from '@ionic/angular';
 
