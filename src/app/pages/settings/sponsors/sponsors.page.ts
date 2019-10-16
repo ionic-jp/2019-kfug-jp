@@ -14,7 +14,7 @@ export class SponsorsPage {
   constructor(private settings: SettingsService) {}
 
   ionViewDidEnter() {
-    this.settings.getCommunityList().subscribe(list => {
+    this.settings.getSponsorList().subscribe(list => {
       this.platinumList = list.company.filter(c => c.rank === 'platinum');
       this.goldList = list.company.filter(c => c.rank === 'gold');
       this.silverList = list.company.filter(c => c.rank === 'silver');

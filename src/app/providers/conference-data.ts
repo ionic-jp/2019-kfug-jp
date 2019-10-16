@@ -9,7 +9,7 @@ import { UserData } from './user-data';
   providedIn: 'root',
 })
 export class ConferenceData {
-  data: any;
+  data: IDataJson;
 
   constructor(public http: HttpClient, public user: UserData) {}
 

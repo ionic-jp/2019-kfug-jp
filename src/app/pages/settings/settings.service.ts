@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
-export interface ICommunityData {
+export interface ISponsorData {
   company: ICompany[];
   community: ICommunity[];
 }
@@ -32,13 +33,23 @@ export interface ILicense {
   providedIn: 'root',
 })
 export class SettingsService {
+  sponsorData: ISponsorData;
+  licenseData: ILicense[];
   constructor(public http: HttpClient) {}
 
-  getCommunityList(): Observable<ICommunityData> {
-    return this.http.get<ICommunityData>('assets/data/community.json');
+  getSponsorList(): Observable<ISponsorData> {
+    if (this.sponsorData) {
+      return of(this.sponsorData);
+    } else {
+      return this.http.get<ISponsorData>('assets/data/community.json').pipe(tap(data => (this.sponsorData = data)));
+    }
   }
 
   getLicenses(): Observable<ILicense[]> {
-    return this.http.get<ILicense[]>('assets/data/licenses.json');
+    if (this.licenseData) {
+      return of(this.licenseData);
+    } else {
+      return this.http.get<ILicense[]>('assets/data/licenses.json').pipe(tap(data => (this.licenseData = data)));
+    }
   }
 }
