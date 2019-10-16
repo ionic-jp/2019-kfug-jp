@@ -8,6 +8,11 @@
 </ion-header>
 
 <ion-content>
+  <ion-list *ngIf="!isReady">
+    <ion-item *ngFor="let a of [1, 2, 3, 4, 5]">
+      <ion-skeleton-text animated="true"></ion-skeleton-text>
+    </ion-item>
+  </ion-list>
   <ion-list>
     <ion-item *ngFor="let l of licenses" [href]="l.repository" target="_blank" detail="false">
       <ion-label>{{l.name}}</ion-label>

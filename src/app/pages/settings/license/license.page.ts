@@ -8,9 +8,15 @@ import { SettingsService, ILicense } from '../settings.service';
 })
 export class LicensePage implements OnInit {
   licenses: ILicense[] = [];
+  isReady = false;
   constructor(private settings: SettingsService) {}
 
-  ngOnInit() {
-    this.settings.getLicenses().subscribe(l => (this.licenses = l));
+  ngOnInit() {}
+
+  ionViewDidEnter() {
+    this.settings.getLicenses().subscribe(l => {
+      this.isReady = true;
+      this.licenses = l;
+    });
   }
 }

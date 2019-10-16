@@ -16,7 +16,6 @@
                 }
               ],
               "timeStart": "11:00",
-              "timeEnd": "11:40",
               "location": "A-1",
               "id": "onoueyosuke",
               "tracks": [
@@ -33,7 +32,6 @@
                 }
               ],
               "timeStart": "11:00",
-              "timeEnd": "11:40",
               "location": "B-1",
               "id": "yamashitakazuki",
               "tracks": [
@@ -50,11 +48,26 @@
                 }
               ],
               "timeStart": "11:00",
-              "timeEnd": "11:40",
               "location": "C-1",
               "id": "taguchiwataru",
               "tracks": [
                 "type-c"
+              ]
+            },
+            {
+              "name": "Vue.js 超入門ハンズオン",
+              "description": "Vue.js(以下 Vue)は、今流行っているWebアプリケーションのフレームワークです。今年には Vue3 にアップデートされる予定ということで更に注目されています。\n当セッションではハンズオン形式で Vue の超初歩的なところから入門していきます。このハンズオンは Vue にふれるきっかけを提供することを目的にしてます。\n対象者としては「これから Vue をやっていこうと思っている人」だったり「 Vue を触り始めたばかりな人」のような Vue 初心者の方、また下記の参加条件を満たせる方になります。\n参加条件：PC持参できる方 & PCにnodejs(v10.x以上)/npm(v5.2以上)がインストールされている。 & HTML/CSS/JavaScriptの経験がある\n",
+              "speakers": [
+                {
+                  "name": "泉 亮輔",
+                  "image": "izumi.png"
+                }
+              ],
+              "timeStart": "11:00",
+              "location": "D-1",
+              "id": "izumi",
+              "tracks": [
+                "type-d"
               ]
             }
           ]
@@ -72,7 +85,6 @@
                 }
               ],
               "timeStart": "11:45",
-              "timeEnd": "12:25",
               "location": "A-2",
               "id": "okunokentaro",
               "tracks": [
@@ -89,7 +101,6 @@
                 }
               ],
               "timeStart": "11:45",
-              "timeEnd": "12:25",
               "location": "B-2",
               "id": "sakakibaramasahiko",
               "tracks": [
@@ -106,11 +117,31 @@
                 }
               ],
               "timeStart": "11:45",
-              "timeEnd": "12:25",
               "location": "C-2",
               "id": "kawamatayuga",
               "tracks": [
                 "type-c"
+              ]
+            }
+          ]
+        },
+        {
+          "time": "12:30",
+          "sessions": [
+            {
+              "name": "Angular 入門ハンズオン",
+              "description": "AngularはWebアプリケーションのフレームワークです。\nGoogleが開発しており、Webアプリに必要な全ての機能が含まれています。\n\n当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。\nAngularの世界へ、一緒に楽しく、入門していきましょう！\n\n参加条件\n- PCを持参できること\n- Node.js(v10.x以上) / npm(v5.2以上)がインストールされていること\n- HTML/CSS/JavaScriptの経験があること\n",
+              "speakers": [
+                {
+                  "name": "中塚 沙也加",
+                  "image": "sayanaka.jpeg"
+                }
+              ],
+              "timeStart": "12:30",
+              "location": "D-2",
+              "id": "sayanaka",
+              "tracks": [
+                "type-d"
               ]
             }
           ]
@@ -128,7 +159,6 @@
                 }
               ],
               "timeStart": "13:00",
-              "timeEnd": "13:40",
               "location": "A-3",
               "id": "matsushitaeri",
               "tracks": [
@@ -145,7 +175,6 @@
                 }
               ],
               "timeStart": "13:00",
-              "timeEnd": "13:40",
               "location": "B-3",
               "id": "conti",
               "tracks": [
@@ -162,7 +191,6 @@
                 }
               ],
               "timeStart": "13:00",
-              "timeEnd": "13:40",
               "location": "C-3",
               "id": "kojimadaiki",
               "tracks": [
@@ -184,7 +212,6 @@
                 }
               ],
               "timeStart": "13:45",
-              "timeEnd": "14:25",
               "location": "A-4",
               "id": "kirillvasiltsov",
               "tracks": [
@@ -201,11 +228,31 @@
                 }
               ],
               "timeStart": "13:45",
-              "timeEnd": "14:25",
               "location": "C-4",
               "id": "suzukitakayuki",
               "tracks": [
                 "type-c"
+              ]
+            }
+          ]
+        },
+        {
+          "time": "13:45",
+          "sessions": [
+            {
+              "name": "React 入門ハンズオン",
+              "description": "Reactはユーザーインターフェイスのためのライブラリです。\nまた、React 16.8 からはHooks という新機能も追加され、使い方も洗練されてきました。\n当セッションはHooksを利用した簡単なハンズオンを行う予定です。\nReactにかぎらず体系的なフレームワークやライブラリを利用したことがない人を中心に進めていきます。もちろんVue.jsなどを利用している人も大歓迎です。\n\n参加のための条件は以下となります。\n- PC持参できる方\n- Node.js(v10.x以上) / npm(v5.2以上)がインストールされている\n- HTML/CSS/JavaScriptの経験がある\n",
+              "speakers": [
+                {
+                  "name": "Kamiya Shimpei",
+                  "image": "kamiyam.jpg"
+                }
+              ],
+              "timeStart": "13:45",
+              "location": "D-3",
+              "id": "kamiyam",
+              "tracks": [
+                "type-d"
               ]
             }
           ]
@@ -223,7 +270,6 @@
                 }
               ],
               "timeStart": "14:30",
-              "timeEnd": "15:10",
               "location": "B-5",
               "id": "jimboyoshihide",
               "tracks": [
@@ -245,7 +291,6 @@
                 }
               ],
               "timeStart": "15:15",
-              "timeEnd": "15:55",
               "location": "A-6",
               "id": "hanatanitakuma",
               "tracks": [
@@ -262,7 +307,6 @@
                 }
               ],
               "timeStart": "15:15",
-              "timeEnd": "15:55",
               "location": "B-6",
               "id": "okitakanori",
               "tracks": [
@@ -279,7 +323,6 @@
                 }
               ],
               "timeStart": "15:15",
-              "timeEnd": "15:55",
               "location": "C-6",
               "id": "hamadamasanari",
               "tracks": [
@@ -301,7 +344,6 @@
                 }
               ],
               "timeStart": "16:00",
-              "timeEnd": "16:40",
               "location": "A-7",
               "id": "hiranomasashi",
               "tracks": [
@@ -318,7 +360,6 @@
                 }
               ],
               "timeStart": "16:00",
-              "timeEnd": "16:40",
               "location": "B-7",
               "id": "onishiyuji",
               "tracks": [
@@ -335,7 +376,6 @@
                 }
               ],
               "timeStart": "16:00",
-              "timeEnd": "16:40",
               "location": "C-7",
               "id": "mikakane",
               "tracks": [
@@ -662,6 +702,54 @@
         "detail": "Web 制作現場で軽視されがちなディレションの価値を再確認するための、ディレクション入門。\nディレクションとはなにかを再考しながら、制作現場におけるディレクションの価値を考えてみましょう。\n\nディレクションの補助ツールとして Github を用いながら、非エンジニアでも使える Github のIssue / Pull Request 活用を紹介。\nWebツールの活用が、ディレクションの要点をどの様にサポートするのか、についても紹介するので、\nGithub を用いていない現場でも、スムーズなディレクション進行に必要なツール活用が見つかるはずです。\n"
       },
       "key": "mikakane"
+    },
+    {
+      "name": "泉 亮輔",
+      "company": "株式会社KYOSO",
+      "hall": "D-1",
+      "time": "11:00",
+      "detail": "普段はIoTエンジニアとして、IoTデバイスから送られてくるセンサーデータのインターフェースをAWS上に設計、構築したり、溜まったデータを可視化するためにWebアプリケーションを開発しています。\nWebアプリケーション開発にVueを使っています。v-kansai や kansai.ts のオーガナイザーをやっていたりします。\n",
+      "image": "izumi.png",
+      "twitter": "https://twitter.com/is_ryo",
+      "facebook": null,
+      "link": null,
+      "session": {
+        "title": "Vue.js 超入門ハンズオン",
+        "detail": "Vue.js(以下 Vue)は、今流行っているWebアプリケーションのフレームワークです。今年には Vue3 にアップデートされる予定ということで更に注目されています。\n当セッションではハンズオン形式で Vue の超初歩的なところから入門していきます。このハンズオンは Vue にふれるきっかけを提供することを目的にしてます。\n対象者としては「これから Vue をやっていこうと思っている人」だったり「 Vue を触り始めたばかりな人」のような Vue 初心者の方、また下記の参加条件を満たせる方になります。\n参加条件：PC持参できる方 & PCにnodejs(v10.x以上)/npm(v5.2以上)がインストールされている。 & HTML/CSS/JavaScriptの経験がある\n"
+      },
+      "key": "izumi"
+    },
+    {
+      "name": "中塚 沙也加",
+      "company": "フリーランス",
+      "hall": "D-2",
+      "time": "12:30",
+      "detail": "sayanakaという名前で活動しています。ng-kyoto代表（２代目）や、ng-japanスタッフをやっていたりします。\n最近の業務では、ionic + Angularでのアプリ開発・改善をしています。\n",
+      "image": "sayanaka.jpeg",
+      "twitter": "https://twitter.com/zilch8",
+      "facebook": null,
+      "link": null,
+      "session": {
+        "title": "Angular 入門ハンズオン",
+        "detail": "AngularはWebアプリケーションのフレームワークです。\nGoogleが開発しており、Webアプリに必要な全ての機能が含まれています。\n\n当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。\nAngularの世界へ、一緒に楽しく、入門していきましょう！\n\n参加条件\n- PCを持参できること\n- Node.js(v10.x以上) / npm(v5.2以上)がインストールされていること\n- HTML/CSS/JavaScriptの経験があること\n"
+      },
+      "key": "sayanaka"
+    },
+    {
+      "name": "Kamiya Shimpei",
+      "company": "METEORWORKS Inc.",
+      "hall": "D-3",
+      "time": "14:00",
+      "detail": "元自動車整備士。後に自動車アフターパーツメーカー勤務\n自身の自動車を取り扱ったWebサイトの運営からインターネットに興味を持つ。\n当初マークアップエンジニア志望だったが、システム開発会社のプログラマとなる。\n紆余曲折ありJavaScript/Node.js をメインとしフロントエンド/サーバーサイド両方の実装を行う。\n",
+      "image": "kamiyam.jpg",
+      "twitter": "https://twitter.com/kamiyam",
+      "facebook": null,
+      "link": null,
+      "session": {
+        "title": "React 入門ハンズオン",
+        "detail": "Reactはユーザーインターフェイスのためのライブラリです。\nまた、React 16.8 からはHooks という新機能も追加され、使い方も洗練されてきました。\n当セッションはHooksを利用した簡単なハンズオンを行う予定です。\nReactにかぎらず体系的なフレームワークやライブラリを利用したことがない人を中心に進めていきます。もちろんVue.jsなどを利用している人も大歓迎です。\n\n参加のための条件は以下となります。\n- PC持参できる方\n- Node.js(v10.x以上) / npm(v5.2以上)がインストールされている\n- HTML/CSS/JavaScriptの経験がある\n"
+      },
+      "key": "kamiyam"
     }
   ],
   "tracks": []

@@ -20,7 +20,8 @@ p.content {
 $categories: (
   type-a: #f29a8b,
   type-b: #64b297,
-  type-c: #56b6db
+  type-c: #56b6db,
+  type-d: #8D6E63,
 );
 
 @each $track, $value in map-remove($categories) {

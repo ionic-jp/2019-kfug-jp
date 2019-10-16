@@ -23,7 +23,6 @@ export interface ISession {
     image: string;
   }[];
   timeStart: string;
-  timeEnd: string;
   location: string;
   id: string;
   tracks: string[];

@@ -1,40 +1,42 @@
 import { contents as speakers } from './contents/speakers/speakers'
+import { contents as handson } from './contents/handson/handson'
 import { contents as community } from './community'
 
 const groups = [
   {
     time: '11:00',
-    end: '11:40',
-    sessionKey: ['onoueyosuke', 'yamashitakazuki', 'taguchiwataru']
+    sessionKey: ['onoueyosuke', 'yamashitakazuki', 'taguchiwataru', 'izumi']
   },
   {
     time: '11:45',
-    end: '12:25',
     sessionKey: ['okunokentaro', 'sakakibaramasahiko', 'kawamatayuga']
   },
   {
+    time: '12:30',
+    sessionKey: ['sayanaka']
+  },
+  {
     time: '13:00',
-    end: '13:40',
     sessionKey: ['matsushitaeri', 'conti', 'kojimadaiki']
   },
   {
     time: '13:45',
-    end: '14:25',
     sessionKey: ['kirillvasiltsov', 'suzukitakayuki']
   },
   {
+    time: '13:45',
+    sessionKey: ['kamiyam']
+  },
+  {
     time: '14:30',
-    end: '15:10',
     sessionKey: ['jimboyoshihide']
   },
   {
     time: '15:15',
-    end: '15:55',
     sessionKey: ['hanatanitakuma', 'okitakanori', 'hamadamasanari']
   },
   {
     time: '16:00',
-    end: '16:40',
     sessionKey: ['hiranomasashi', 'onishiyuji', 'mikakane']
   }
 ];
@@ -49,10 +51,11 @@ const writeFile = (path, data) => {
 };
 
 const sessions = groups.map(group => {
+  const sessionGroup = speakers().concat(handson());
   return {
     time: group.time,
     sessions: group.sessionKey.map(key => {
-      return speakers()
+      return sessionGroup
         .map(s => {
           return {
             name: s.session.title,
@@ -80,7 +83,7 @@ const data = {
     date: "firstDay",
     groups: sessions,
   }],
-  speakers: speakers(),
+  speakers: speakers().concat(handson()),
   tracks: []
 };
 

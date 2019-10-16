@@ -10,4 +10,4 @@ const speakersList = speakers.map(speaker => {
   return speakerInfo;
 });
 
-export const contents = speakersList;
+export const contents = () => speakersList;
