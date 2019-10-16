@@ -8,6 +8,10 @@
   background-color: var(--ion-background-color);;
 }
 
+ion-content {
+  --padding-bottom: 32px;
+}
+
 p.content {
   font-size: 1.1rem;
   line-height: 1.8rem;
