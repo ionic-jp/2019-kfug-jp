@@ -7,7 +7,7 @@ const speakers = [
   "suzukitakayuki",
   "hamadamasanari",
   "okitakanori",
-  // "maedakeisuke",
+  "maedakeisuke",
   "sakakibaramasahiko",
   "hiranomasashi",
   "yamashitakazuki",
@@ -21,8 +21,8 @@ const speakers = [
 ];
 
 const speakersList = speakers.map(speaker => {
-  const speakerInfo = require(`json-loader!yaml-loader!./${speaker}.yml`);
-  speakerInfo.key = speaker;
+  const speakerInfo = require(`json-loader!yaml-loader!./${speaker}.yml`)
+  speakerInfo.key = speaker
   return speakerInfo;
 });
 

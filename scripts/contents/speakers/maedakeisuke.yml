@@ -9,6 +9,6 @@ twitter: https://twitter.com/voyagesister
 facebook:
 link:
 session:
-  title: AWSを用いたフロントエンド開発(仮)
+  title: AWSを活用したフロントエンド開発
   detail: |
-    (仮)Amazonにより提供されているクラウドコンピューティングサービスのAWSを、クラウド、インフラの知識もなくDatabaseやユーザ登録、認証を実装する方法を紹介します。
+    WEBアプリケーション開発において必要なユーザ認証やデータベース、そのほかバックエンドな箇所をAWSをフル活用する事でフロントエンドファーストに開発できる方法を紹介します。

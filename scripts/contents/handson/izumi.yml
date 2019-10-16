@@ -1,5 +1,7 @@
 name: 泉 亮輔
 company: 株式会社KYOSO
+hall: "D-1"
+time: "11:00"
 detail: |
   普段はIoTエンジニアとして、IoTデバイスから送られてくるセンサーデータのインターフェースをAWS上に設計、構築したり、溜まったデータを可視化するためにWebアプリケーションを開発しています。
   Webアプリケーション開発にVueを使っています。v-kansai や kansai.ts のオーガナイザーをやっていたりします。
@@ -7,6 +9,7 @@ image: izumi.png
 twitter: https://twitter.com/is_ryo
 facebook:
 link:
+#guideline: github url here!
 session:
   title: Vue.js 超入門ハンズオン
   detail: |

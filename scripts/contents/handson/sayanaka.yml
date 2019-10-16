@@ -1,0 +1,25 @@
+name: 中塚 沙也加
+company: フリーランス
+hall: "D-2"
+time: "12:30"
+detail: |
+  sayanakaという名前で活動しています。ng-kyoto代表（２代目）や、ng-japanスタッフをやっていたりします。
+  最近の業務では、ionic + Angularでのアプリ開発・改善をしています。
+image: sayanaka.jpeg
+twitter: https://twitter.com/zilch8
+facebook:
+link:
+#guideline: github url here!
+session:
+  title: Angular 入門ハンズオン
+  detail: |
+    AngularはWebアプリケーションのフレームワークです。
+    Googleが開発しており、Webアプリに必要な全ての機能が含まれています。
+
+    当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。
+    Angularの世界へ、一緒に楽しく、入門していきましょう！
+
+    参加条件
+    - PCを持参できること
+    - Node.js(v10.x以上) / npm(v5.2以上)がインストールされていること
+    - HTML/CSS/JavaScriptの経験があること

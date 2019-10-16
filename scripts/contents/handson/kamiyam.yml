@@ -1,0 +1,26 @@
+name: Kamiya Shimpei
+company: METEORWORKS Inc.
+hall: "D-3"
+time: "14:00"
+detail: |
+  元自動車整備士。後に自動車アフターパーツメーカー勤務
+  自身の自動車を取り扱ったWebサイトの運営からインターネットに興味を持つ。
+  当初マークアップエンジニア志望だったが、システム開発会社のプログラマとなる。
+  紆余曲折ありJavaScript/Node.js をメインとしフロントエンド/サーバーサイド両方の実装を行う。
+image: kamiyam.jpg
+twitter: https://twitter.com/kamiyam
+facebook:
+link:
+#guideline: github url here!
+session:
+  title: React 入門ハンズオン
+  detail: |
+    Reactはユーザーインターフェイスのためのライブラリです。
+    また、React 16.8 からはHooks という新機能も追加され、使い方も洗練されてきました。
+    当セッションはHooksを利用した簡単なハンズオンを行う予定です。
+    Reactにかぎらず体系的なフレームワークやライブラリを利用したことがない人を中心に進めていきます。もちろんVue.jsなどを利用している人も大歓迎です。
+    
+    参加のための条件は以下となります。
+    - PC持参できる方
+    - Node.js(v10.x以上) / npm(v5.2以上)がインストールされている
+    - HTML/CSS/JavaScriptの経験がある
