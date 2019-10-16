@@ -5,7 +5,7 @@ export type EventHandler = (...args: any[]) => any;
   providedIn: 'root',
 })
 export class Events {
-  private c = new Map<string, EventHandler[]>();
+  public c = new Map<string, EventHandler[]>();
 
   constructor() {}
   /**

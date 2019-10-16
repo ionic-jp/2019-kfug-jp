@@ -68,8 +68,13 @@ export class AppComponent implements OnInit {
     });
 
     if ('theme' in localStorage) {
-      this.dark = localStorage.theme;
+      this.dark = localStorage.theme === 'true';
+      this.events.publish('theme', this.dark);
     }
+
+    this.events.subscribe('subscribe', event => {
+      this.events.publish('theme', this.dark);
+    });
 
     this.events.subscribe('theme', theme => {
       localStorage.theme = theme;

@@ -5,7 +5,7 @@
 }
 
 .dark-theme ion-header.header-collapse-condense-inactive ion-toolbar {
-  background-color: #000000;
+  background-color: var(--ion-background-color);;
 }
 
 p.content {
