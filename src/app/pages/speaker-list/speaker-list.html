@@ -38,7 +38,7 @@
 
   <ion-grid fixed>
     <ion-row class="ion-align-items-stretch">
-      <ion-col size="12" size-md="6" *ngFor="let speaker of speakers">
+      <ion-col size="12" size-md="6" *ngFor="let speaker of speakers;  trackBy: trackBySpeaker">
         <ion-card class="speaker-card" routerLink="/app/speakers/detail/{{speaker.key}}">
           <ion-card-header class="ion-text-center" style="border-bottom: 1px solid #f0f0f0">
             <ion-item lines="none" class="ion-no-padding ion-padding-top ion-padding-bottom">

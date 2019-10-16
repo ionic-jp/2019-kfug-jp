@@ -98,4 +98,12 @@ export class SchedulePage {
     });
     await alert.present();
   }
+
+  trackByGroup(index: number, value: IGroups): string {
+    return value ? value.time : null;
+  }
+
+  trackBySession(index: number, value: ISession): string {
+    return value ? value.id : null;
+  }
 }

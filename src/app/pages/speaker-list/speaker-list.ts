@@ -22,4 +22,8 @@ export class SpeakerListPage {
       this.speakers = speakers;
     });
   }
+
+  trackBySpeaker(index: number, value: ISpeaker): string {
+    return value ? value.key : null;
+  }
 }

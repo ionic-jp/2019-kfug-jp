@@ -37,13 +37,13 @@
   </ion-list>
 
   <ion-list #scheduleList *ngIf="shownSessions">
-    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
+    <ion-item-group *ngFor="let group of groups; trackBy: trackByGroup" [hidden]="group.hide">
       <ion-item-divider sticky>
         <ion-label>{{group.time}}</ion-label>
       </ion-item-divider>
 
       <ion-item-sliding
-        *ngFor="let session of group.sessions; let i = index"
+        *ngFor="let session of group.sessions; let i = index; trackBy: trackBySession"
         #slidingItem
         [attr.track]="session.tracks[0]"
         [hidden]="session.hide"
