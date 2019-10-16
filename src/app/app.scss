@@ -12,6 +12,10 @@ ion-content {
   --padding-bottom: 32px;
 }
 
+*:focus {
+  outline: none;
+}
+
 p.content {
   font-size: 1.1rem;
   line-height: 1.8rem;
