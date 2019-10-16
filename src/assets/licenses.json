@@ -9,36 +9,36 @@
         "repository": "https://github.com/angular/angular-cli",
         "publisher": "Angular Authors"
     },
-    "@angular/common@8.1.1": {
+    "@angular/common@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
     },
-    "@angular/compiler-cli@8.1.1": {
+    "@angular/compiler-cli@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular"
     },
-    "@angular/compiler@8.1.1": {
+    "@angular/compiler@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
     },
-    "@angular/core@8.1.1": {
+    "@angular/core@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
     },
-    "@angular/forms@8.1.1": {
+    "@angular/forms@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
     },
-    "@angular/platform-browser-dynamic@8.1.1": {
+    "@angular/platform-browser-dynamic@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
     },
-    "@angular/platform-browser@8.1.1": {
+    "@angular/platform-browser@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
@@ -48,12 +48,12 @@
         "repository": "https://github.com/angular/angular-cli",
         "publisher": "Angular Authors"
     },
-    "@angular/router@8.1.1": {
+    "@angular/router@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
     },
-    "@angular/service-worker@8.1.1": {
+    "@angular/service-worker@9.0.0-next.11": {
         "licenses": "MIT",
         "repository": "https://github.com/angular/angular",
         "publisher": "angular"
@@ -66,10 +66,6 @@
         "licenses": "MIT",
         "repository": "https://github.com/ionic-team/ionic",
         "publisher": "Ionic Team"
-    },
-    "@ionic/storage@2.2.0": {
-        "licenses": "MIT",
-        "repository": "https://github.com/ionic-team/ionic-storage"
     },
     "@schematics/angular@8.3.6": {
         "licenses": "MIT",
@@ -232,7 +228,7 @@
         "licenses": "MIT",
         "repository": "https://github.com/chalk/chalk"
     },
-    "chokidar@2.1.6": {
+    "chokidar@2.1.8": {
         "licenses": "MIT",
         "repository": "https://github.com/paulmillr/chokidar",
         "publisher": "Paul Miller",
@@ -584,10 +580,6 @@
         "email": "i@izs.me",
         "url": "http://blog.izs.me/"
     },
-    "immediate@3.0.6": {
-        "licenses": "MIT",
-        "repository": "https://github.com/calvinmetcalf/immediate"
-    },
     "inflight@1.0.6": {
         "licenses": "ISC",
         "repository": "https://github.com/npm/inflight",
@@ -605,13 +597,6 @@
         "publisher": "Isaac Z. Schlueter",
         "email": "i@izs.me",
         "url": "http://blog.izs.me/"
-    },
-    "interpret@1.2.0": {
-        "licenses": "MIT",
-        "repository": "https://github.com/gulpjs/interpret",
-        "publisher": "Gulp Team",
-        "email": "team@gulpjs.com",
-        "url": "http://gulpjs.com/"
     },
     "invert-kv@2.0.0": {
         "licenses": "MIT",
@@ -768,20 +753,6 @@
         "repository": "https://github.com/davglass/license-checker",
         "publisher": "Dav Glass",
         "email": "davglass@gmail.com"
-    },
-    "lie@3.1.1": {
-        "licenses": "MIT",
-        "repository": "https://github.com/calvinmetcalf/lie"
-    },
-    "localforage-cordovasqlitedriver@1.7.0": {
-        "licenses": "Apache*",
-        "repository": "https://github.com/thgreasi/localForage-cordovaSQLiteDriver",
-        "publisher": "Thodoris Greasidis"
-    },
-    "localforage@1.7.1": {
-        "licenses": "Apache-2.0",
-        "repository": "https://github.com/localForage/localForage",
-        "publisher": "Mozilla"
     },
     "locate-path@3.0.0": {
         "licenses": "MIT",
@@ -1185,12 +1156,6 @@
         "email": "thlorenz@gmx.de",
         "url": "thlorenz.com"
     },
-    "rechoir@0.6.2": {
-        "licenses": "MIT",
-        "repository": "https://github.com/tkellen/node-rechoir",
-        "publisher": "Tyler Kellen",
-        "url": "http://goingslowly.com/"
-    },
     "reflect-metadata@0.1.13": {
         "licenses": "Apache-2.0",
         "repository": "https://github.com/rbuckton/reflect-metadata",
@@ -1293,7 +1258,7 @@
         "email": "i@izs.me",
         "url": "http://blog.izs.me/"
     },
-    "semver@5.6.0": {
+    "semver@6.3.0": {
         "licenses": "ISC",
         "repository": "https://github.com/npm/node-semver"
     },
@@ -1326,10 +1291,6 @@
         "publisher": "Sindre Sorhus",
         "email": "sindresorhus@gmail.com",
         "url": "sindresorhus.com"
-    },
-    "shelljs@0.8.3": {
-        "licenses": "BSD-3-Clause",
-        "repository": "https://github.com/shelljs/shelljs"
     },
     "signal-exit@3.0.2": {
         "licenses": "ISC",
@@ -1549,7 +1510,7 @@
         "publisher": "Jon Schlinkert",
         "url": "https://github.com/jonschlinkert"
     },
-    "upath@1.1.2": {
+    "upath@1.2.0": {
         "licenses": "MIT",
         "repository": "https://github.com/anodynos/upath",
         "publisher": "Angelos Pikoulas",
@@ -1652,9 +1613,9 @@
         "licenses": "MIT",
         "repository": "https://github.com/yargs/yargs"
     },
-    "zone.js@0.9.1": {
+    "zone.js@0.10.2": {
         "licenses": "MIT",
-        "repository": "https://github.com/angular/zone.js",
+        "repository": "https://github.com/angular/angular",
         "publisher": "Brian Ford"
     }
 }
