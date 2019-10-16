@@ -15,7 +15,7 @@
     "lint-staged": "lint-staged",
     "formatter": "prettier --parser typescript --write \"./**/*.ts\" &&  prettier --parser html --write \"./**/*.html\"",
     "generate": "webpack scripts/index.js --output=\"./scripts/index.bundle.js\" --target=node && node scripts/index.bundle.js",
-    "license": "node license.generator.js"
+    "license": "node scripts/license.generator.js"
   },
   "repository": {
     "type": "git",

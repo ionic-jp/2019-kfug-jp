@@ -2,7 +2,7 @@ const execSync = require('child_process').execSync;
 const fs = require('fs');
 const compareVersions = require('compare-versions');
 
-const filePath = './src/assets/licenses.json';
+const filePath = './src/assets/data/licenses.json';
 
 // 元情報となるライセンス一覧のJSONを出力
 const ret = execSync(`npx license-checker --production --json > ${filePath}`);
@@ -38,4 +38,13 @@ licenseKeys.forEach(key => {
   }
 });
 
-fs.writeFileSync(filePath, JSON.stringify(newLicenses, null, 4));
+const resultLicense = [];
+Object.keys(newLicenses).forEach(function (key) {
+  resultLicense.push({
+    name: key,
+    license: newLicenses[key].licenses,
+    repository: newLicenses[key].repository,
+  });
+});
+
+fs.writeFileSync(filePath, JSON.stringify(resultLicense, null, 4));

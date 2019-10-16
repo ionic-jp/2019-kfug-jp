@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { SettingsPage } from './settings.page';
 import { SponsorsPage } from './sponsors/sponsors.page';
+import { LicensePage } from './license/license.page';
 
 const routes: Routes = [
   {
@@ -17,10 +18,14 @@ const routes: Routes = [
     path: 'sponsors',
     component: SponsorsPage,
   },
+  {
+    path: 'licenses',
+    component: LicensePage,
+  },
 ];
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, RouterModule.forChild(routes)],
-  declarations: [SettingsPage, SponsorsPage],
+  declarations: [SettingsPage, SponsorsPage, LicensePage],
 })
 export class SettingsModule {}

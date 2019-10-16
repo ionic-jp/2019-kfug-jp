@@ -22,13 +22,23 @@ export interface ICommunity {
   link: string;
 }
 
+export interface ILicense {
+  name: string;
+  license: string;
+  repository: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
-export class SponsorsService {
+export class SettingsService {
   constructor(public http: HttpClient) {}
 
   getCommunityList(): Observable<ICommunityData> {
     return this.http.get<ICommunityData>('assets/data/community.json');
+  }
+
+  getLicenses(): Observable<ILicense[]> {
+    return this.http.get<ILicense[]>('assets/data/licenses.json');
   }
 }

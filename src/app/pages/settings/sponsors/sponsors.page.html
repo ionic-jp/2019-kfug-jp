@@ -15,6 +15,7 @@
       [attr.lines]="platinumList.length === (i + 1) ? 'none' : 'full'"
       [href]="c.url"
       target="_blank"
+      detail="false"
     >
       <section class="ion-text-center ion-padding-bottom" style="width: 100%;">
         <ion-avatar style="width: 120px; height: 120px; margin: auto;"
@@ -22,6 +23,7 @@
         ></ion-avatar>
         <ion-label style="display: block; margin: auto;">{{c.name}}</ion-label>
       </section>
+      <ion-icon slot="end" name="link" color="medium" size="small"></ion-icon>
     </ion-item>
     <ion-item-divider sticky>GOLD</ion-item-divider>
     <ion-item
@@ -29,11 +31,13 @@
       [attr.lines]="goldList.length === (i + 1) ? 'none' : ''"
       [href]="c.url"
       target="_blank"
+      detail="false"
     >
       <ion-avatar slot="start" style="width: 80px; height: 80px;"
         ><ion-img [src]="'/assets/img/sponsors/' + c.key + '.png'"></ion-img
       ></ion-avatar>
       <ion-label>{{c.name}}</ion-label>
+      <ion-icon slot="end" name="link" color="medium" size="small"></ion-icon>
     </ion-item>
     <ion-item-divider sticky>SILVER</ion-item-divider>
     <ion-item
@@ -41,18 +45,21 @@
       [attr.lines]="silverList.length === (i + 1) ? 'none' : ''"
       [href]="c.url"
       target="_blank"
+      detail="false"
     >
       <ion-avatar slot="start" style="width: 48px; height: 48px;"
         ><ion-img [src]="'/assets/img/sponsors/' + c.key + '.png'"></ion-img
       ></ion-avatar>
       <ion-label>{{c.name}}</ion-label>
+      <ion-icon slot="end" name="link" color="medium" size="small"></ion-icon>
     </ion-item>
     <ion-item-divider sticky>COMMUNITY</ion-item-divider>
-    <ion-item *ngFor="let c of communityList" [href]="c.link" target="_blank">
+    <ion-item *ngFor="let c of communityList" [href]="c.link" target="_blank" detail="false">
       <ion-avatar slot="start" style="width: 48px; height: 48px;"
         ><ion-img [src]="'/assets/img/communities/' + c.image"></ion-img
       ></ion-avatar>
       <ion-label>{{c.name}}</ion-label>
+      <ion-icon slot="end" name="link" color="medium" size="small"></ion-icon>
     </ion-item>
   </ion-list>
 </ion-content>
