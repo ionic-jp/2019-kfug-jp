@@ -1,6 +1,6 @@
 export interface IDataJson {
   schedule: ISchedule[];
-  speakers: ISpeaker;
+  speakers: ISpeaker[];
 }
 
 export interface ISchedule {
