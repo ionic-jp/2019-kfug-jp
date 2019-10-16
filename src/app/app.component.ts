@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     {
       title: 'その他',
       url: '/app/settings',
-      icon: 'settings',
+      icon: 'more',
     },
   ];
   dark = false;

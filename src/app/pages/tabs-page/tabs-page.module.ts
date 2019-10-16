@@ -7,7 +7,6 @@ import { TabsPage } from './tabs-page';
 import { TabsPageRoutingModule } from './tabs-page-routing.module';
 
 import { SettingsModule } from '../settings/settings.module';
-import { CommunityModule } from '../settings/community/community.module';
 import { ModalModule } from '../modal/modal.module';
 import { SpeakerListModule } from '../speaker-list/speaker-list.module';
 import { SchedulePage } from '../schedule/schedule';
@@ -18,7 +17,6 @@ import { SchedulePage } from '../schedule/schedule';
     CommonModule,
     FormsModule,
     IonicModule,
-    CommunityModule,
     ModalModule,
     SpeakerListModule,
     TabsPageRoutingModule,

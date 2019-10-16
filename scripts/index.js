@@ -1,5 +1,5 @@
 import { contents as speakers } from './contents/speakers/speakers'
-// import { contents as sponsors } from 'contents/sponsors/sponsors'
+import { contents as community } from './community'
 
 const groups = [
   {
@@ -85,3 +85,4 @@ const data = {
 };
 
 writeFile("./src/assets/data/data.json", JSON.stringify(data, null , "  "));
+writeFile("./src/assets/data/community.json", JSON.stringify(community, null , "  "));

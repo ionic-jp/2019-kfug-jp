@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/app/settings"></ion-back-button>
+    </ion-buttons>
+    <ion-title>スポンサー</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-divider sticky>PREMIUM</ion-item-divider>
+    <ion-item
+      *ngFor="let c of platinumList; let i = index"
+      [attr.lines]="platinumList.length === (i + 1) ? 'none' : 'full'"
+      [href]="c.url"
+      target="_blank"
+    >
+      <section class="ion-text-center ion-padding-bottom" style="width: 100%;">
+        <ion-avatar style="width: 120px; height: 120px; margin: auto;"
+          ><ion-img [src]="'/assets/img/sponsors/' + c.key + '.png'"></ion-img
+        ></ion-avatar>
+        <ion-label style="display: block; margin: auto;">{{c.name}}</ion-label>
+      </section>
+    </ion-item>
+    <ion-item-divider sticky>GOLD</ion-item-divider>
+    <ion-item
+      *ngFor="let c of goldList; let i = index"
+      [attr.lines]="goldList.length === (i + 1) ? 'none' : ''"
+      [href]="c.url"
+      target="_blank"
+    >
+      <ion-avatar slot="start" style="width: 80px; height: 80px;"
+        ><ion-img [src]="'/assets/img/sponsors/' + c.key + '.png'"></ion-img
+      ></ion-avatar>
+      <ion-label>{{c.name}}</ion-label>
+    </ion-item>
+    <ion-item-divider sticky>SILVER</ion-item-divider>
+    <ion-item
+      *ngFor="let c of silverList; let i = index"
+      [attr.lines]="silverList.length === (i + 1) ? 'none' : ''"
+      [href]="c.url"
+      target="_blank"
+    >
+      <ion-avatar slot="start" style="width: 48px; height: 48px;"
+        ><ion-img [src]="'/assets/img/sponsors/' + c.key + '.png'"></ion-img
+      ></ion-avatar>
+      <ion-label>{{c.name}}</ion-label>
+    </ion-item>
+    <ion-item-divider sticky>COMMUNITY</ion-item-divider>
+    <ion-item *ngFor="let c of communityList" [href]="c.link" target="_blank">
+      <ion-avatar slot="start" style="width: 48px; height: 48px;"
+        ><ion-img [src]="'/assets/img/communities/' + c.image"></ion-img
+      ></ion-avatar>
+      <ion-label>{{c.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

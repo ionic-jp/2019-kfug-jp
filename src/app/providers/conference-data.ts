@@ -1,9 +1,8 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { IDataJson, IGroups, ISession } from '../interfaces/data.json';
-
 import { UserData } from './user-data';
 
 @Injectable({
@@ -57,19 +56,15 @@ export class ConferenceData {
   filterSession(session: ISession, queryWords: string[], segment: string) {
     let matchesQueryText = false;
     if (queryWords.length) {
-      // of any query word is in the session name than it passes the query test
       queryWords.forEach((queryWord: string) => {
         if (session.name.toLowerCase().indexOf(queryWord) > -1) {
           matchesQueryText = true;
         }
       });
     } else {
-      // if there are no query words then this session passes the query test
       matchesQueryText = true;
     }
 
-    // if the segment is 'favorites', but session is not a user favorite
-    // then this session does not pass the segment test
     let matchesSegment = false;
     if (segment === 'favorites') {
       if (this.user.hasFavorite(session.name)) {
@@ -79,7 +74,6 @@ export class ConferenceData {
       matchesSegment = true;
     }
 
-    // all tests must be true if it should not be hidden
     session.hide = !(matchesQueryText && matchesSegment);
   }
 

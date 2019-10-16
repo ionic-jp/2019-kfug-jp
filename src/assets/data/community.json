@@ -1,0 +1,110 @@
+{
+  "company": [
+    {
+      "name": "株式会社ラクス",
+      "rank": "silver",
+      "key": "SP0301",
+      "url": "https://www.rakus.co.jp/"
+    },
+    {
+      "name": "株式会社タンバリン",
+      "rank": "gold",
+      "key": "SP0201",
+      "url": "https://www.tam-bourine.co.jp/",
+      "page": "/sponsors/tambourine"
+    },
+    {
+      "name": "株式会社ゆめみ",
+      "rank": "platinum",
+      "key": "SP0101",
+      "url": "https://www.yumemi.co.jp/ja",
+      "page": "/sponsors/yumemi"
+    },
+    {
+      "name": "株式会社スマレジ",
+      "rank": "gold",
+      "key": "SP0202",
+      "url": "https://corp.smaregi.jp/",
+      "page": "/sponsors/smaregi"
+    },
+    {
+      "name": "株式会社リビルド",
+      "rank": "silver",
+      "key": "SP0302",
+      "url": "https://re-build.company/"
+    },
+    {
+      "name": "株式会社CI",
+      "rank": "platinum",
+      "key": "SP0102",
+      "url": "https://creative-innovation.co.jp/"
+    },
+    {
+      "name": "Lec Cafe",
+      "rank": "silver",
+      "key": "SP0303",
+      "url": "https://leccafe.connpass.com/"
+    },
+    {
+      "name": "ベルフェイス株式会社",
+      "rank": "silver",
+      "key": "SP0304",
+      "url": "https://corp.bell-face.com/"
+    },
+    {
+      "name": "株式会社インパス",
+      "rank": "gold",
+      "key": "SP0203",
+      "url": "https://impath.co.jp/",
+      "page": "/sponsors/impath"
+    },
+    {
+      "name": "rabify CDN",
+      "rank": "silver",
+      "key": "SP0305",
+      "url": "https://www.rabify.me/"
+    },
+    {
+      "name": "株式会社chatbox.inc",
+      "rank": "media",
+      "key": "SP0401",
+      "url": "https://chatbox-inc.com/"
+    },
+    {
+      "name": "Elevenback LLC",
+      "rank": "silver",
+      "key": "SP0306",
+      "url": "https://elevenback.co.jp/"
+    }
+  ],
+  "community": [
+    {
+      "name": "ng-kyoto",
+      "key": "ngkyoto",
+      "detail": "ng-kyotoはAngularをテーマに京都で活動を行っているユーザーコミュニティです。\n日本の古都、京都から最先端のWeb技術を学び、発信していきます。\n古都の空気に触れながら、Angularの未来を一緒に学びませんか？\nAngularって聞くと「なんぎやな、ややこしな」と思わはるかもしれませんけど、周りと一緒に勉強したら意外ととっつきやすいんですよ。\n",
+      "image": "ng-kyoto.png",
+      "link": "https://ng-kyoto.connpass.com/"
+    },
+    {
+      "name": "v-kansai",
+      "detail": "関西を拠点に(毎月京都と大阪で交互に)、Vue.js に興味のある方でしたらどなたでもお気軽にご参加ください。\n主に Vue.js日本ユーザーグループの Slack vuejs-jp Slack の #v-kansai チャンネルでやり取りをしています。\nTwitterハッシュタグは #v_kansai を使っています。\n",
+      "key": "vkansai",
+      "image": "v-kansai.png",
+      "link": "https://vuekansai.connpass.com/"
+    },
+    {
+      "name": "Adobe XD ユーザーグループ大阪",
+      "key": "adobexd",
+      "detail": "Adobe XDは「考える速度でデザインする」をテーマにアドビが開発・販売しているUI/UXデザインツールです。\nXDのアドビ公認ユーザーグループ「Adobe XD ユーザーグループ大阪」では、XDを使っている人、周りに広めたい人、興味を持っている人が、気軽に参加できる勉強会や交流会を、定期的に開催しています。\nXDを中心としたノウハウ交換だけでなく、使って楽しい・気になることを共有したり、困っていることを解決したりする場になることを目指しています。\n",
+      "image": "XDUGosaka_logo.png",
+      "link": "https://xdstudy-osaka.connpass.com/"
+    },
+    {
+      "name": "Ionic Japan User Group",
+      "detail": "IonicはWeb技術を使ったモバイルアプリとデスクトップアプリ制作をサポートします。\nIonicを使うことで、iOS、Androidのそれぞれに準拠したUIコンポーネントやアニメーションを利用することができます。つくったWebアプリをApp Store/Google Play Storeで配信するための機能があるので、Web制作者がアプリ開発をはじめる第一歩におすすめです。\n",
+      "key": "ionic",
+      "image": "ionic-jpan.png",
+      "link": "https://ionic-jp.connpass.com/"
+    }
+  ]
+}

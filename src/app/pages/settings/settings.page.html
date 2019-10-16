@@ -6,19 +6,29 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>
-      Setting
-    </ion-list-header>
-
-    <ion-item>
+    <ion-list-header>Theme</ion-list-header>
+    <ion-item lines="full">
       <ion-label>
         ダークテーマ
       </ion-label>
       <ion-toggle [(ngModel)]="dark" (ionChange)="changeTheme()"></ion-toggle>
     </ion-item>
-    <ion-item>
-      <ion-label>@ionic/angular</ion-label>
-      <ion-note mode="md" slot="end">4.12.0-dev.201910151255.dd0d993</ion-note>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Contribute</ion-list-header>
+    <ion-item routerLink="/app/settings/sponsors"><ion-label>スポンサー</ion-label></ion-item>
+    <ion-item lines="full"><ion-label>ライセンス</ion-label></ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Powered By</ion-list-header>
+    <ion-item lines="none"
+      ><ion-icon name="logo-ionic" slot="start"></ion-icon><ion-label>Ionic Framework</ion-label></ion-item
+    >
+    <ion-item></ion-item>
+    <ion-item lines="full" href="https://amzn.to/2MX0CFl" target="_blank">
+      <ion-label>入門書をAmazonでみる</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
