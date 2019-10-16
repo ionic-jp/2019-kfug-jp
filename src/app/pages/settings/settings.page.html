@@ -24,11 +24,23 @@
   <ion-list>
     <ion-list-header>Powered By</ion-list-header>
     <ion-item lines="none"
-      ><ion-icon name="logo-ionic" slot="start"></ion-icon><ion-label>Ionic Framework</ion-label></ion-item
+      ><ion-icon name="logo-ionic" slot="start" style="color: #3880ff"></ion-icon
+      ><ion-label>Ionic Framework</ion-label></ion-item
     >
-    <ion-item></ion-item>
-    <ion-item lines="full" href="https://amzn.to/2MX0CFl" target="_blank">
-      <ion-label>入門書をAmazonでみる</ion-label>
+    <ion-item>
+      <p class="guide">
+        Ionic
+        FrameworkはWeb技術を用いてアプリを最短距離でつくるためのフレームワークです。このアプリはCordovaもしくはCapacitorというライブラリを使ってビルドすると、
+        AppStore/Google Playで配信することもできます。フロントエンドに興味がある方はぜひチャレンジしてみてください。
+      </p>
+    </ion-item>
+    <ion-item href="https://amzn.to/2MX0CFl" target="_blank" detail="false">
+      <ion-label>入門書をAmazonで予約（11月末発売）</ion-label>
+      <ion-icon slot="end" name="link" color="medium" size="small"></ion-icon>
+    </ion-item>
+    <ion-item lines="full" href="https://ionicframework.jp/docs/" target="_blank" detail="false">
+      <ion-label>日本語ドキュメンテーションをみる</ion-label>
+      <ion-icon slot="end" name="link" color="medium" size="small"></ion-icon>
     </ion-item>
   </ion-list>
 </ion-content>
