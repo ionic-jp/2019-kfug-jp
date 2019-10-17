@@ -29,7 +29,7 @@ const groups = [
   },
   {
     time: '14:30',
-    sessionKey: ['jimboyoshihide']
+    sessionKey: ['maedakeisuke', 'jimboyoshihide']
   },
   {
     time: '15:15',
