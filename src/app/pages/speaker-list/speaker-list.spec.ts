@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { TestBed, async } from '@angular/core/testing';
 import { ActionSheetController } from '@ionic/angular';
 
-import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { SpeakerListPage } from './speaker-list';
 import { ConferenceData } from '../../providers/conference-data';
 
@@ -21,7 +20,6 @@ describe('SpeakerListPage', () => {
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       providers: [
         { provide: ActionSheetController, useValue: actionSheetSpy },
-        { provide: InAppBrowser, useValue: iabSpy },
         { provide: Router, useValue: routerSpy },
         { provide: ConferenceData, useValue: confDataSub },
       ],
