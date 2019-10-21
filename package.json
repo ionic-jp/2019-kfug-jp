@@ -31,7 +31,7 @@
     "@angular/pwa": "~0.803.6",
     "@angular/router": "9.0.0-next.11",
     "@angular/service-worker": "~9.0.0-next.11",
-    "@ionic/angular": "4.12.0-dev.201910151255.dd0d993",
+    "@ionic/angular": "5.0.0-dev.201910171822.f69f9e4",
     "core-js": "^3.2.1",
     "json-loader": "^0.5.7",
     "license-checker": "^25.0.1",
