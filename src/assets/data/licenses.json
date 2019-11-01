@@ -1,76 +1,141 @@
 [
     {
-        "name": "@angular-devkit/core@9.0.0-next.11",
+        "name": "@angular-devkit/core@8.3.17",
         "license": "MIT",
         "repository": "https://github.com/angular/angular-cli"
     },
     {
-        "name": "@angular-devkit/schematics@9.0.0-next.11",
+        "name": "@angular-devkit/schematics@8.3.17",
         "license": "MIT",
         "repository": "https://github.com/angular/angular-cli"
     },
     {
-        "name": "@angular/common@9.0.0-next.11",
+        "name": "@angular/common@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/compiler-cli@9.0.0-next.11",
+        "name": "@angular/compiler-cli@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/compiler@9.0.0-next.11",
+        "name": "@angular/compiler@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/core@9.0.0-next.11",
+        "name": "@angular/core@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/forms@9.0.0-next.11",
+        "name": "@angular/forms@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/platform-browser-dynamic@9.0.0-next.11",
+        "name": "@angular/localize@9.0.0-next.13",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/platform-browser@9.0.0-next.11",
+        "name": "@angular/platform-browser-dynamic@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/pwa@0.803.6",
+        "name": "@angular/platform-browser@9.0.0-rc.0",
+        "license": "MIT",
+        "repository": "https://github.com/angular/angular"
+    },
+    {
+        "name": "@angular/pwa@0.803.17",
         "license": "MIT",
         "repository": "https://github.com/angular/angular-cli"
     },
     {
-        "name": "@angular/router@9.0.0-next.11",
+        "name": "@angular/router@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@angular/service-worker@9.0.0-next.11",
+        "name": "@angular/service-worker@9.0.0-rc.0",
         "license": "MIT",
         "repository": "https://github.com/angular/angular"
     },
     {
-        "name": "@ionic/angular@4.12.0-dev.201910151255.dd0d993",
+        "name": "@babel/code-frame@7.5.5",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-code-frame"
+    },
+    {
+        "name": "@babel/core@7.6.4",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-core"
+    },
+    {
+        "name": "@babel/generator@7.6.4",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-generator"
+    },
+    {
+        "name": "@babel/helper-function-name@7.1.0",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-helper-function-name"
+    },
+    {
+        "name": "@babel/helper-get-function-arity@7.0.0",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-helper-get-function-arity"
+    },
+    {
+        "name": "@babel/helper-split-export-declaration@7.4.4",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-helper-split-export-declaration"
+    },
+    {
+        "name": "@babel/helpers@7.6.2",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-helpers"
+    },
+    {
+        "name": "@babel/highlight@7.0.0",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-highlight"
+    },
+    {
+        "name": "@babel/parser@7.6.4",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-parser"
+    },
+    {
+        "name": "@babel/template@7.6.0",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-template"
+    },
+    {
+        "name": "@babel/traverse@7.6.3",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-traverse"
+    },
+    {
+        "name": "@babel/types@7.6.3",
+        "license": "MIT",
+        "repository": "https://github.com/babel/babel/tree/master/packages/babel-types"
+    },
+    {
+        "name": "@ionic/angular@5.0.0-beta.0",
         "license": "MIT",
         "repository": "https://github.com/ionic-team/ionic"
     },
     {
-        "name": "@ionic/core@4.12.0-dev.201910151255.dd0d993",
+        "name": "@ionic/core@5.0.0-beta.0",
         "license": "MIT",
         "repository": "https://github.com/ionic-team/ionic"
     },
     {
-        "name": "@schematics/angular@8.3.6",
+        "name": "@schematics/angular@8.3.17",
         "license": "MIT",
         "repository": "https://github.com/angular/angular-cli"
     },
@@ -285,7 +350,7 @@
         "repository": "https://github.com/moxystudio/node-cross-spawn"
     },
     {
-        "name": "debug@3.2.6",
+        "name": "debug@4.1.1",
         "license": "MIT",
         "repository": "https://github.com/visionmedia/debug"
     },
@@ -353,6 +418,11 @@
         "name": "esprima@4.0.1",
         "license": "BSD-2-Clause",
         "repository": "https://github.com/jquery/esprima"
+    },
+    {
+        "name": "esutils@2.0.2",
+        "license": "BSD",
+        "repository": "https://github.com/estools/esutils"
     },
     {
         "name": "execa@1.0.0",
@@ -448,6 +518,11 @@
         "name": "glob@7.1.3",
         "license": "ISC",
         "repository": "https://github.com/isaacs/node-glob"
+    },
+    {
+        "name": "globals@11.12.0",
+        "license": "MIT",
+        "repository": "https://github.com/sindresorhus/globals"
     },
     {
         "name": "graceful-fs@4.1.15",
@@ -595,9 +670,19 @@
         "repository": "https://github.com/jonschlinkert/isobject"
     },
     {
+        "name": "js-tokens@4.0.0",
+        "license": "MIT",
+        "repository": "https://github.com/lydell/js-tokens"
+    },
+    {
         "name": "js-yaml@3.13.1",
         "license": "MIT",
         "repository": "https://github.com/nodeca/js-yaml"
+    },
+    {
+        "name": "jsesc@2.5.2",
+        "license": "MIT",
+        "repository": "https://github.com/mathiasbynens/jsesc"
     },
     {
         "name": "json-loader@0.5.7",
@@ -613,6 +698,11 @@
         "name": "json-schema-traverse@0.4.1",
         "license": "MIT",
         "repository": "https://github.com/epoberezkin/json-schema-traverse"
+    },
+    {
+        "name": "json5@2.1.1",
+        "license": "MIT",
+        "repository": "https://github.com/json5/json5"
     },
     {
         "name": "kind-of@6.0.2",
@@ -635,7 +725,12 @@
         "repository": "https://github.com/sindresorhus/locate-path"
     },
     {
-        "name": "magic-string@0.25.4",
+        "name": "lodash@4.17.15",
+        "license": "MIT",
+        "repository": "https://github.com/lodash/lodash"
+    },
+    {
+        "name": "magic-string@0.25.3",
         "license": "MIT",
         "repository": "https://github.com/rich-harris/magic-string"
     },
@@ -1195,6 +1290,11 @@
         "repository": "https://github.com/npm/node-tar"
     },
     {
+        "name": "to-fast-properties@2.0.0",
+        "license": "MIT",
+        "repository": "https://github.com/sindresorhus/to-fast-properties"
+    },
+    {
         "name": "to-object-path@0.3.0",
         "license": "MIT",
         "repository": "https://github.com/jonschlinkert/to-object-path"
@@ -1220,7 +1320,7 @@
         "repository": "https://github.com/Microsoft/tslib"
     },
     {
-        "name": "typescript@3.4.5",
+        "name": "typescript@3.6.4",
         "license": "Apache-2.0",
         "repository": "https://github.com/Microsoft/TypeScript"
     },
