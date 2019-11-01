@@ -130,7 +130,7 @@
           "sessions": [
             {
               "name": "Angular 入門ハンズオン",
-              "description": "AngularはWebアプリケーションのフレームワークです。\nGoogleが開発しており、Webアプリに必要な全ての機能が含まれています。\n\n当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。\nAngularの世界へ、一緒に楽しく、入門していきましょう！\n\n参加条件\n- PCを持参できること\n- Node.js(v10.x以上) / npm(v5.2以上)がインストールされていること\n- HTML/CSS/JavaScriptの経験があること\n",
+              "description": "AngularはWebアプリケーションのフレームワークです。\nGoogleが開発しており、Webアプリに必要な全ての機能が含まれています。\n\n当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。\nAngularの世界へ、一緒に楽しく、入門していきましょう！\n\n参加条件\n- PCを持参できること\n- HTML/CSS/JavaScriptの経験があること\n",
               "speakers": [
                 {
                   "name": "中塚 沙也加",
@@ -729,6 +729,7 @@
       "twitter": "https://twitter.com/is_ryo",
       "facebook": null,
       "link": null,
+      "guideline": "https://github.com/ryo-is/vue-handson-app/blob/master/README.md",
       "session": {
         "title": "Vue.js 超入門ハンズオン",
         "detail": "Vue.js(以下 Vue)は、今流行っているWebアプリケーションのフレームワークです。今年には Vue3 にアップデートされる予定ということで更に注目されています。\n当セッションではハンズオン形式で Vue の超初歩的なところから入門していきます。このハンズオンは Vue にふれるきっかけを提供することを目的にしてます。\n対象者としては「これから Vue をやっていこうと思っている人」だったり「 Vue を触り始めたばかりな人」のような Vue 初心者の方、また下記の参加条件を満たせる方になります。\n参加条件：PC持参できる方 & PCにnodejs(v10.x以上)/npm(v5.2以上)がインストールされている。 & HTML/CSS/JavaScriptの経験がある\n"
@@ -745,9 +746,10 @@
       "twitter": "https://twitter.com/zilch8",
       "facebook": null,
       "link": null,
+      "guideline": "https://github.com/ng-kyoto/angular-handson-2019kfug",
       "session": {
         "title": "Angular 入門ハンズオン",
-        "detail": "AngularはWebアプリケーションのフレームワークです。\nGoogleが開発しており、Webアプリに必要な全ての機能が含まれています。\n\n当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。\nAngularの世界へ、一緒に楽しく、入門していきましょう！\n\n参加条件\n- PCを持参できること\n- Node.js(v10.x以上) / npm(v5.2以上)がインストールされていること\n- HTML/CSS/JavaScriptの経験があること\n"
+        "detail": "AngularはWebアプリケーションのフレームワークです。\nGoogleが開発しており、Webアプリに必要な全ての機能が含まれています。\n\n当セッションでは、Angularに初めてふれる方・興味がある方に向けた簡単なハンズオンを行う予定です。\nAngularの世界へ、一緒に楽しく、入門していきましょう！\n\n参加条件\n- PCを持参できること\n- HTML/CSS/JavaScriptの経験があること\n"
       },
       "key": "sayanaka"
     },

@@ -9,7 +9,7 @@ image: izumi.png
 twitter: https://twitter.com/is_ryo
 facebook:
 link:
-#guideline: github url here!
+guideline: https://github.com/ryo-is/vue-handson-app/blob/master/README.md
 session:
   title: Vue.js 超入門ハンズオン
   detail: |

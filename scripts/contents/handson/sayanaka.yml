@@ -9,7 +9,7 @@ image: sayanaka.jpeg
 twitter: https://twitter.com/zilch8
 facebook:
 link:
-#guideline: github url here!
+guideline: https://github.com/ng-kyoto/angular-handson-2019kfug
 session:
   title: Angular 入門ハンズオン
   detail: |
@@ -21,5 +21,4 @@ session:
 
     参加条件
     - PCを持参できること
-    - Node.js(v10.x以上) / npm(v5.2以上)がインストールされていること
     - HTML/CSS/JavaScriptの経験があること
