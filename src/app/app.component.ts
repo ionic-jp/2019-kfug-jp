@@ -4,6 +4,7 @@ import { SwUpdate } from '@angular/service-worker';
 import { MenuController, Platform, ToastController } from '@ionic/angular';
 
 import { UserData } from './providers/user-data';
+import { ConferenceData } from './providers/conference-data';
 import { Events } from './providers/events';
 
 @Component({
@@ -42,6 +43,7 @@ export class AppComponent implements OnInit {
     private platform: Platform,
     private router: Router,
     private userData: UserData,
+    private conference: ConferenceData,
     private swUpdate: SwUpdate,
     private toastCtrl: ToastController,
     private events: Events,
@@ -81,6 +83,7 @@ export class AppComponent implements OnInit {
   }
 
   initializeApp() {
+    this.conference.load();
     this.platform.ready().then(() => {});
   }
 }
