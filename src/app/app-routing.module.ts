@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
+import { TabsPage } from './pages/tabs-page/tabs-page';
+import { SchedulePage } from './pages/schedule/schedule';
+import { SessionDetailPage } from './pages/session-detail/session-detail';
 
 const routes: Routes = [
   {
@@ -9,7 +12,49 @@ const routes: Routes = [
   },
   {
     path: 'app',
-    loadChildren: () => import('./pages/tabs-page/tabs-page.module').then(m => m.TabsPageModule),
+    component: TabsPage,
+    children: [
+      {
+        path: 'schedule',
+        children: [
+          {
+            path: '',
+            component: SchedulePage,
+          },
+          {
+            path: 'session/:sessionId',
+            component: SessionDetailPage,
+          },
+        ],
+      },
+      {
+        path: 'speakers',
+        loadChildren: () => import('./pages/speaker-list/speaker-list.module').then(m => m.SpeakerListModule),
+      },
+      {
+        path: 'settings',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsModule),
+          },
+        ],
+      },
+      {
+        path: 'timeline',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./pages/timeline/timeline.module').then(m => m.TimelinePageModule),
+          },
+        ],
+      },
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'schedule',
+      },
+    ],
   },
 ];
 
