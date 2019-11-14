@@ -4,8 +4,8 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./"
 },
-//  "angularCompilerOptions": {
-//    "enableIvy": true
-//  },
+  "angularCompilerOptions": {
+    "enableIvy": false
+  },
   "exclude": ["test.ts", "**/*.spec.ts"]
 }
