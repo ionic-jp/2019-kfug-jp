@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
     {
       title: 'スピーカー',
       url: '/app/speakers',
-      icon: 'contacts',
+      icon: 'person',
     },
     {
       title: '話題をみる',
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     {
       title: 'その他',
       url: '/app/settings',
-      icon: 'more',
+      icon: 'settings',
     },
   ];
   dark = false;

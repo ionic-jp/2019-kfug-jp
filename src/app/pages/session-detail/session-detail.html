@@ -8,7 +8,7 @@
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-button (click)="toggleFavorite()" color="primary">
-        <ion-icon *ngIf="!isFavorite" slot="icon-only" name="heart-empty"></ion-icon>
+        <ion-icon *ngIf="!isFavorite" slot="icon-only" name="heart-outline"></ion-icon>
         <ion-icon *ngIf="isFavorite" slot="icon-only" name="heart"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -24,7 +24,7 @@
           <ion-label>{{session.location}}</ion-label>
         </ion-chip>
         <ion-chip color="primary">
-          <ion-icon name="clock" color="primary"></ion-icon>
+          <ion-icon name="time" color="primary"></ion-icon>
           <ion-label>{{session.timeStart}}</ion-label>
         </ion-chip>
       </ion-item>
