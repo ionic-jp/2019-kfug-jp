@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { ActionSheetController } from '@ionic/angular';
+import { ActionSheetController, IonContent } from '@ionic/angular';
 
 import { ConferenceData } from '../../shared/services/conference-data';
 import { ISpeaker } from '../../interfaces/data.json';
@@ -11,15 +11,42 @@ import { ISpeaker } from '../../interfaces/data.json';
   styleUrls: ['./speaker-list.scss'],
 })
 export class SpeakerListPage {
-  speakers: ISpeaker[] = [];
-  isReady = false;
+  @ViewChild(IonContent)
+  private content: IonContent;
 
-  constructor(public actionSheetCtrl: ActionSheetController, public confData: ConferenceData, public router: Router) {}
+  isReady = false;
+  speakers: ISpeaker[] = [];
+  menuType: 'speaker' | 'tutor' = 'speaker';
+  private _speakers: ISpeaker[] = [];
+
+  constructor(
+    private actionSheetCtrl: ActionSheetController,
+    private confData: ConferenceData,
+    private router: Router,
+  ) {}
 
   ionViewDidEnter() {
-    this.confData.getSpeakers().subscribe((speakers: any[]) => {
+    this.confData.getSpeakers().subscribe((speakers: ISpeaker[]) => {
       this.isReady = true;
-      this.speakers = speakers;
+      this._speakers = speakers;
+      this.selectedMenu(null, speakers);
+    });
+  }
+
+  selectedMenu(event = null, _speakers: ISpeaker[] = null): void {
+    const type = event ? event.detail.value : this.menuType;
+    const speakers = _speakers ? _speakers : this._speakers;
+
+    if (event) {
+      this.content.scrollToTop();
+    }
+
+    this.speakers = speakers.filter(d => {
+      if (type === 'speaker') {
+        return !d.session.title.includes('ハンズオン');
+      } else {
+        return d.session.title.includes('ハンズオン');
+      }
     });
   }
 

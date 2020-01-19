@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>スピーカー</ion-title>
+    <ion-segment [(ngModel)]="menuType" (ionChange)="selectedMenu($event)">
+      <ion-segment-button value="speaker">スピーカー</ion-segment-button>
+      <ion-segment-button value="tutor">講師</ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 

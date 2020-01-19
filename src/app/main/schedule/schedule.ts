@@ -23,11 +23,11 @@ export class SchedulePage {
   groups: IGroups[] = [];
 
   constructor(
-    public alertCtrl: AlertController,
-    public confData: ConferenceData,
-    public router: Router,
-    public user: UserData,
-    public config: Config,
+    private alertCtrl: AlertController,
+    private confData: ConferenceData,
+    private router: Router,
+    private user: UserData,
+    private config: Config,
   ) {}
 
   ionViewWillEnter() {

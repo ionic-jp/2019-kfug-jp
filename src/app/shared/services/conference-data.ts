@@ -11,7 +11,7 @@ import { UserData } from './user-data';
 export class ConferenceData {
   data: IDataJson;
 
-  constructor(public http: HttpClient, public user: UserData) {}
+  constructor(private http: HttpClient, private user: UserData) {}
 
   load() {
     if (this.data) {
