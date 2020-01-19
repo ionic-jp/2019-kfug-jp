@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 
 import { SpeakerListPage } from './speaker-list';
-import { ModalModule } from '../modal/modal.module';
+import { SharedModule } from '../../shared/shared.module';
 import { SpeakerListPageRoutingModule } from './speaker-list-routing.module';
 
 @NgModule({
-  imports: [CommonModule, IonicModule, ModalModule, SpeakerListPageRoutingModule],
+  imports: [CommonModule, IonicModule, SharedModule, SpeakerListPageRoutingModule],
   declarations: [SpeakerListPage],
 })
 export class SpeakerListModule {}

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { SpeakerListPage } from './speaker-list';
-import { SpeakerDetailPage } from '../speaker-detail/speaker-detail';
+import { SpeakerDetailPage } from '../../shared/pages/speaker-detail/speaker-detail';
 
 const routes: Routes = [
   {

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
-import { ConferenceData } from '../../providers/conference-data';
-import { ISpeaker } from '../../interfaces/data.json';
+import { ConferenceData } from '../../services/conference-data';
+import { ISpeaker } from '../../../interfaces/data.json';
 import { SessionDetailPage } from '../session-detail/session-detail';
 
 @Component({

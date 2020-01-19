@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { IDataJson, IGroups, ISession } from '../interfaces/data.json';
+import { IDataJson, IGroups, ISession } from '../../interfaces/data.json';
 import { UserData } from './user-data';
 
 @Injectable({

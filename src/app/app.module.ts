@@ -9,12 +9,12 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 
-import { TabsPage } from './pages/tabs-page/tabs-page';
-import { SpeakerListModule } from './pages/speaker-list/speaker-list.module';
-import { SchedulePage } from './pages/schedule/schedule';
-import { SettingsModule } from './pages/settings/settings.module';
+import { TabsPage } from './main/tabs-page/tabs-page';
+import { SpeakerListModule } from './main/speaker-list/speaker-list.module';
+import { SchedulePage } from './main/schedule/schedule';
+import { SettingsModule } from './main/settings/settings.module';
 import { CommonModule } from '@angular/common';
-import { ModalModule } from './pages/modal/modal.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
@@ -26,7 +26,7 @@ import { ModalModule } from './pages/modal/modal.module';
     SpeakerListModule,
     SettingsModule,
     CommonModule,
-    ModalModule,
+    SharedModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
     }),

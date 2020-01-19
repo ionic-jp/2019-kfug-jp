@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Events } from '../../providers/events';
+import { Events } from '../../shared/services/events';
 
 @Component({
   selector: 'settings',

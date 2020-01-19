@@ -2,8 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController, IonList, Config } from '@ionic/angular';
 
-import { ConferenceData } from '../../providers/conference-data';
-import { UserData } from '../../providers/user-data';
+import { ConferenceData } from '../../shared/services/conference-data';
+import { UserData } from '../../shared/services/user-data';
 import { IGroups, ISession } from '../../interfaces/data.json';
 
 @Component({

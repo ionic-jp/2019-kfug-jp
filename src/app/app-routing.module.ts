@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
-import { TabsPage } from './pages/tabs-page/tabs-page';
-import { SchedulePage } from './pages/schedule/schedule';
-import { SessionDetailPage } from './pages/session-detail/session-detail';
+import { TabsPage } from './main/tabs-page/tabs-page';
+import { SchedulePage } from './main/schedule/schedule';
+import { SessionDetailPage } from './shared/pages/session-detail/session-detail';
 
 const routes: Routes = [
   {
@@ -29,14 +29,14 @@ const routes: Routes = [
       },
       {
         path: 'speakers',
-        loadChildren: () => import('./pages/speaker-list/speaker-list.module').then(m => m.SpeakerListModule),
+        loadChildren: () => import('./main/speaker-list/speaker-list.module').then(m => m.SpeakerListModule),
       },
       {
         path: 'settings',
         children: [
           {
             path: '',
-            loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsModule),
+            loadChildren: () => import('./main/settings/settings.module').then(m => m.SettingsModule),
           },
         ],
       },
@@ -45,7 +45,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('./pages/timeline/timeline.module').then(m => m.TimelinePageModule),
+            loadChildren: () => import('./main/timeline/timeline.module').then(m => m.TimelinePageModule),
           },
         ],
       },

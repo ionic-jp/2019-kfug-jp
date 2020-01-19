@@ -3,9 +3,9 @@ import { Router } from '@angular/router';
 import { SwUpdate } from '@angular/service-worker';
 import { MenuController, Platform, ToastController } from '@ionic/angular';
 
-import { UserData } from './providers/user-data';
-import { ConferenceData } from './providers/conference-data';
-import { Events } from './providers/events';
+import { UserData } from './shared/services/user-data';
+import { ConferenceData } from './shared/services/conference-data';
+import { Events } from './shared/services/events';
 
 @Component({
   selector: 'app-root',

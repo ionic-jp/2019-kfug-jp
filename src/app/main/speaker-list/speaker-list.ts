@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActionSheetController } from '@ionic/angular';
 
-import { ConferenceData } from '../../providers/conference-data';
+import { ConferenceData } from '../../shared/services/conference-data';
 import { ISpeaker } from '../../interfaces/data.json';
 
 @Component({
