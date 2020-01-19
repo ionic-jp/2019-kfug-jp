@@ -10,7 +10,7 @@ import { ModalController } from '@ionic/angular';
 export class LicensePage implements OnInit {
   licenses: ILicense[] = [];
   isReady = false;
-  constructor(private settings: SettingsService, private modalCtrl: ModalController) {}
+  constructor(private settings: SettingsService, public modalCtrl: ModalController) {}
 
   ngOnInit() {}
 

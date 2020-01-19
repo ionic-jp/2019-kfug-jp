@@ -12,7 +12,7 @@ export class SponsorsPage {
   goldList: ICompany[] = [];
   silverList: ICompany[] = [];
   communityList: ICommunity[] = [];
-  constructor(private settings: SettingsService, private modalCtrl: ModalController) {}
+  constructor(private settings: SettingsService, public modalCtrl: ModalController) {}
 
   ionViewDidEnter() {
     this.settings.getSponsorList().subscribe(list => {
