@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 import { SettingsService, ICompany, ICommunity } from '../settings.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class SponsorsPage {
   goldList: ICompany[] = [];
   silverList: ICompany[] = [];
   communityList: ICommunity[] = [];
-  constructor(private settings: SettingsService) {}
+  constructor(private settings: SettingsService, private modalCtrl: ModalController) {}
 
   ionViewDidEnter() {
     this.settings.getSponsorList().subscribe(list => {

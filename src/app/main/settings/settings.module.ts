@@ -14,14 +14,6 @@ const routes: Routes = [
     path: '',
     component: SettingsPage,
   },
-  {
-    path: 'sponsors',
-    component: SponsorsPage,
-  },
-  {
-    path: 'licenses',
-    component: LicensePage,
-  },
 ];
 
 @NgModule({

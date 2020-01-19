@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SettingsService, ILicense } from '../settings.service';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'license',
@@ -9,7 +10,7 @@ import { SettingsService, ILicense } from '../settings.service';
 export class LicensePage implements OnInit {
   licenses: ILicense[] = [];
   isReady = false;
-  constructor(private settings: SettingsService) {}
+  constructor(private settings: SettingsService, private modalCtrl: ModalController) {}
 
   ngOnInit() {}
 

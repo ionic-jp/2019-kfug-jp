@@ -1,14 +1,15 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/app/settings"></ion-back-button>
+      <ion-button (click)="modalCtrl.dismiss()"><ion-icon name="close" slot="icon-only"></ion-icon></ion-button>
     </ion-buttons>
     <ion-title>スポンサー</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <section class="ion-text-center ion-padding" *ngIf="platinumList.length === 0"><ion-spinner></ion-spinner></section>
+  <ion-list *ngIf="platinumList.length > 0">
     <ion-item-divider sticky>PREMIUM</ion-item-divider>
     <ion-item
       *ngFor="let c of platinumList; let i = index"
