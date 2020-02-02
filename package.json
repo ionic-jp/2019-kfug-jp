@@ -27,7 +27,7 @@
     "@angular/forms": "9.0.0-rc.13",
     "@angular/platform-browser": "9.0.0-rc.13",
     "@angular/platform-browser-dynamic": "9.0.0-rc.13",
-    "@angular/pwa": "~0.900.0-rc.9",
+    "@angular/pwa": "~0.900.0-rc.12",
     "@angular/router": "9.0.0-rc.13",
     "@angular/service-worker": "~9.0.0-rc.13",
     "@capacitor/core": "1.4.0",
