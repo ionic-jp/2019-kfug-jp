@@ -12,6 +12,10 @@ ion-content {
   --padding-bottom: 32px;
 }
 
+ion-title[size=large] {
+  font-size: 30px !important;
+}
+
 *:focus {
   outline: none;
 }
