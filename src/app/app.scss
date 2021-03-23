@@ -4,20 +4,8 @@
   }
 }
 
-.dark-theme ion-header.header-collapse-condense-inactive ion-toolbar {
-  background-color: var(--ion-toolbar-background);
-}
-
-ion-content {
-  --padding-bottom: 32px;
-}
-
 ion-title[size=large] {
   font-size: 30px !important;
-}
-
-*:focus {
-  outline: none;
 }
 
 p.content {
