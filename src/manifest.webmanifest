@@ -1,15 +1,16 @@
 {
   "name": "FrontConf2019アプリ",
   "short_name": "FrontConf2019",
-  "start_url": "index.html",
+  "theme_color": "#2f6ee5",
+  "background_color": "#2f6ee5",
   "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
   "icons": [
     {
       "src": "assets/img/appicon.png",
       "sizes": "152x152",
       "type": "image/png"
     }
-  ],
-  "background_color": "#2f6ee5",
-  "theme_color": "#2f6ee5"
+  ]
 }

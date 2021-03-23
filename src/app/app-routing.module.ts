@@ -29,14 +29,14 @@ const routes: Routes = [
       },
       {
         path: 'speakers',
-        loadChildren: () => import('./main/speaker-list/speaker-list.module').then(m => m.SpeakerListModule),
+        loadChildren: () => import('./main/speaker-list/speaker-list.module').then((m) => m.SpeakerListModule),
       },
       {
         path: 'settings',
         children: [
           {
             path: '',
-            loadChildren: () => import('./main/settings/settings.module').then(m => m.SettingsModule),
+            loadChildren: () => import('./main/settings/settings.module').then((m) => m.SettingsModule),
           },
         ],
       },
@@ -45,7 +45,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('./main/timeline/timeline.module').then(m => m.TimelinePageModule),
+            loadChildren: () => import('./main/timeline/timeline.module').then((m) => m.TimelinePageModule),
           },
         ],
       },
@@ -59,7 +59,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules, relativeLinkResolution: 'legacy' })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
